@@ -13,12 +13,15 @@ r=0.33;      % radius of wheel
 jw=1.13;     %kg-m2 
 tb=2000;     %Braking torque
 Vx=140*5/18; %Longitudinal velocity
-w=Vx/r;     %angular velocity
-W=1.65;     %wing span
-AR=35;      %aspect ratio
-H=W/AR;     %chord of the wing
-F=1.387;    %lift coefficient
-kp=250000;
+w=Vx/r;      %angular velocity
+W=1.65;      %wing span
+AR=35;       %aspect ratio
+H=W/AR;      %chord of the wing
+F=1.387;     %lift coefficient
+kp=250000;      
 ki=100000;
 kd=100;
 % sim('abs.slx')
+
+% https://core.ac.uk/download/pdf/157852603.pdf
+% https://www.youtube.com/watch?v=ZF004x8kd08
