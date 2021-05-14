@@ -1,4 +1,11 @@
-2021/05/11-10:59:17.109 392c Reusing MANIFEST leveldb/MANIFEST-000001
-2021/05/11-11:04:40.364 59e4 Level-0 table #5: started
-2021/05/11-11:04:40.383 59e4 Level-0 table #5: 941674 bytes OK
-2021/05/11-11:04:40.389 59e4 Delete type=0 #3
+2021/05/13-23:46:17.413 1cbc Reusing MANIFEST leveldb/MANIFEST-000001
+2021/05/13-23:46:17.416 1cbc Recovering log #4
+2021/05/13-23:46:17.417 1cbc Level-0 table #7: started
+2021/05/13-23:46:17.423 1cbc Level-0 table #7: 35389 bytes OK
+2021/05/13-23:46:17.427 1cbc Delete type=0 #4
+2021/05/13-23:51:40.670 e8c Level-0 table #10: started
+2021/05/13-23:51:40.680 e8c Level-0 table #10: 941655 bytes OK
+2021/05/13-23:51:40.685 e8c Delete type=0 #8
+2021/05/13-23:53:36.515 1c88 Level-0 table #12: started
+2021/05/13-23:53:36.522 1c88 Level-0 table #12: 34034 bytes OK
+2021/05/13-23:53:36.525 1c88 Delete type=0 #9

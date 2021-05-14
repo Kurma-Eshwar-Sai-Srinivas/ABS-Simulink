@@ -1,0 +1,5799 @@
+Model {
+  Name			  "opt_qvm_bocsh_contr"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jan 30 08:54:58 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "krangelo"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jan 30 08:56:03 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  on
+  BooleanDataType	  on
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      CombinatorialLogic
+      TruthTable	      "[0 0;0 1;0 1;1 0;0 1;1 0;1 0;1 1]"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      DataType		      "auto"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Derivative
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      ShowAdditionalParam     off
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+    }
+    Block {
+      BlockType		      Memory
+      X0		      "0"
+      InheritSampleTime	      off
+      LinearizeMemory	      off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      TransferFcn
+      Numerator		      "[1]"
+      Denominator	      "[1 2 1]"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "opt_qvm_bocsh_contr"
+    Location		    [480, 85, 1060, 386]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "ABS Block"
+      Ports		      [4, 1]
+      Position		      [95, 33, 180, 237]
+      TreatAsAtomicUnit	      off
+      MaskPromptString	      "R1 - Rate of incerase of the  Breake Torque. [N"
+"m/s]|R2 - Rate of decerase of the  Breake Torque. [Nm/s]|Bmax - Max. Value of"
+" the Brake Torque. [Nm]|TO - Inlet Valve open time [s]|TC - Inlet Valve close"
+" time [s]|Desired slip [%]  |Slipmin - Minimum slip level|-a - Threshold valu"
+"e of the wheel peripheral deceleration [m/s^2]|+a - Threshold value of the wh"
+"eel peripheral acceleration [m/s^2]|A - Threshold value of the wheel peripher"
+"al acceleration [m/s^2]|Omdot/Omega -Threshold value of the ratio Om_dot / Om"
+" [Hz]"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit,edit,edit,edit,ed"
+"it,edit"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,,,"
+      MaskVariables	      "R1=@1;R2=@2;Bmax=@3;TO=@4;TC=@5;Slip=@6;Slipmin"
+"=@7;neg_a=@8;pos_a=@9;A=@10;om_dot_om=@11;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "19000|19000|1300|0.006|0.050|18|17|60|3|10|3"
+      System {
+	Name			"ABS Block"
+	Location		[6, 82, 1001, 697]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Omega"
+	  Position		  [25, 128, 55, 142]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "X2_dot"
+	  Position		  [20, 248, 50, 262]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "r_eff"
+	  Position		  [20, 368, 50, 382]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Brake Applic"
+	  Position		  [20, 488, 50, 502]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "+a"
+	  Position		  [715, 467, 755, 503]
+	  Value			  "pos_a"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "-a"
+	  Position		  [715, 415, 755, 445]
+	  Value			  "- neg_a"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "-a Comparator1"
+	  Position		  [500, 567, 530, 598]
+	  Orientation		  "left"
+	  Operator		  "<="
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "-a Comparator2"
+	  Position		  [500, 682, 530, 713]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "A"
+	  Position		  [805, 466, 845, 504]
+	  Orientation		  "left"
+	  Value			  "A"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "A1"
+	  Position		  [560, 591, 600, 629]
+	  Orientation		  "left"
+	  Value			  "1200"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "A2"
+	  Position		  [560, 686, 600, 724]
+	  Orientation		  "left"
+	  Value			  "1257"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Brake Torque Modulator 1"
+	  Description		  "The sysytem holds the Brake Torque at the r"
+"eached value if no control signal applied"
+	  Ports			  [3, 1]
+	  Position		  [690, 68, 805, 262]
+	  TreatAsAtomicUnit	  off
+	  MaskPromptString	  "Bmax - Max. Value of the Brake Torque. [Nm]"
+"|R1 - Rate of incerase of the  Brake Torque. [Nm/s]|R2 - Rate of decerase of "
+"the  Brake Torque. [Nm/s]"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVarAliasString	  ",,"
+	  MaskVariables		  "Bmax=@1;R1=@2;R2=@3;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "Bmax|R1|R2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Tb"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  System {
+	    Name		    "Brake Torque Modulator 1"
+	    Location		    [2, 74, 1014, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Brake Applic"
+	      Position		      [260, 178, 290, 192]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Outlet alve"
+	      Position		      [260, 303, 290, 317]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Inlet valve"
+	      Position		      [265, 98, 295, 112]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [370, 200, 400, 230]
+	      Orientation	      "left"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      Ports		      [1, 1]
+	      Position		      [570, 220, 600, 250]
+	      LimitOutput	      on
+	      UpperSaturationLimit    "Bmax"
+	      LowerSaturationLimit    "0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Rate of Increase"
+	      Position		      [370, 140, 400, 170]
+	      Orientation	      "left"
+	      Value		      "R1"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Rate of decrease"
+	      Position		      [370, 245, 400, 275]
+	      Orientation	      "left"
+	      Value		      "R2"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [515, 197, 535, 273]
+	      ShowName		      off
+	      Inputs		      "|+-"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [370, 90, 400, 120]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      Position		      [370, 291, 405, 329]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch2"
+	      Position		      [455, 168, 485, 202]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Brake Torque"
+	      Position		      [635, 228, 665, 242]
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      DstBlock		      "Switch2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Brake Applic"
+	      SrcPort		      1
+	      DstBlock		      "Switch2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch2"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, 30]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rate of decrease"
+	      SrcPort		      1
+	      Points		      [-20, 0; 0, 40]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rate of Increase"
+	      SrcPort		      1
+	      Points		      [-15, 0; 0, -40]
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -50]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "Brake Torque"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Outlet alve"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Inlet valve"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -20]
+		DstBlock		"Switch2"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[-15, 0]
+		Branch {
+		  Points		  [0, 105]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  Points		  [0, -120]
+		  DstBlock		  "Switch"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Brake Torque Modulator 2"
+	  Description		  "The sysytem holds the Brake Torque at the r"
+"eached value if no control signal applied"
+	  Ports			  [3, 1]
+	  Position		  [965, 13, 1080, 207]
+	  TreatAsAtomicUnit	  off
+	  MaskPromptString	  "Bmax - Max. Value of the Brake Torque. [Nm]"
+"|R1 - Rate of incerase of the  Brake Torque. [Nm/s]|R2 - Rate of decerase of "
+"the  Brake Torque. [Nm/s]"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVarAliasString	  ",,"
+	  MaskVariables		  "Bmax=@1;R1=@2;R2=@3;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "Bmax|R1|R2"
+	  System {
+	    Name		    "Brake Torque Modulator 2"
+	    Location		    [2, 74, 1014, 724]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Brake Applic"
+	      Position		      [260, 178, 290, 192]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Outlet alve"
+	      Position		      [260, 303, 290, 317]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Inlet valve"
+	      Position		      [265, 98, 295, 112]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [370, 200, 400, 230]
+	      Orientation	      "left"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      Ports		      [1, 1]
+	      Position		      [570, 220, 600, 250]
+	      LimitOutput	      on
+	      UpperSaturationLimit    "Bmax"
+	      LowerSaturationLimit    "0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Rate of Increase"
+	      Position		      [370, 140, 400, 170]
+	      Orientation	      "left"
+	      Value		      "R1"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Rate of decrease"
+	      Position		      [370, 245, 400, 275]
+	      Orientation	      "left"
+	      Value		      "R2"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [515, 197, 535, 273]
+	      ShowName		      off
+	      Inputs		      "|+-"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [370, 90, 400, 120]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      Position		      [370, 291, 405, 329]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch2"
+	      Position		      [455, 168, 485, 202]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Brake Torque"
+	      Position		      [635, 228, 665, 242]
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      DstBlock		      "Switch2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Brake Applic"
+	      SrcPort		      1
+	      DstBlock		      "Switch2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch2"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, 30]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rate of decrease"
+	      SrcPort		      1
+	      Points		      [-20, 0; 0, 40]
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Rate of Increase"
+	      SrcPort		      1
+	      Points		      [-15, 0; 0, -40]
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -50]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "Brake Torque"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Outlet alve"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Inlet valve"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      Points		      [0, 0; -20, 0]
+	      Branch {
+		Points			[0, -20]
+		DstBlock		"Switch2"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[-15, 0]
+		Branch {
+		  Points		  [0, 105]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Branch {
+		  Points		  [0, -120]
+		  DstBlock		  "Switch"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  Position		  [735, 365, 765, 395]
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Generator"
+	  Ports			  [1, 1]
+	  Position		  [595, 14, 645, 76]
+	  TreatAsAtomicUnit	  off
+	  MaskPromptString	  "Valve open [s]|Valve closed [s]"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskVariables		  "TO=@1;TC=@2;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "TO|TC"
+	  System {
+	    Name		    "Generator"
+	    Location		    [2, 82, 1014, 732]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [65, 108, 95, 122]
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [215, 240, 245, 270]
+	      Orientation	      "left"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion1"
+	      Position		      [270, 175, 315, 205]
+	      ShowName		      off
+	      DataType		      "boolean"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion2"
+	      Position		      [185, 336, 240, 364]
+	      Orientation	      "left"
+	      ShowName		      off
+	      DataType		      "double"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion5"
+	      Position		      [120, 101, 165, 129]
+	      ShowName		      off
+	      DataType		      "boolean"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator2"
+	      Ports		      [2, 1]
+	      Position		      [345, 143, 375, 207]
+	      Operator		      "OR"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory1"
+	      Position		      [640, 335, 670, 365]
+	      Orientation	      "left"
+	    }
+	    Block {
+	      BlockType		      Memory
+	      Name		      "Memory2"
+	      Position		      [280, 335, 310, 365]
+	      Orientation	      "left"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem2"
+	      Ports		      [1, 1]
+	      Position		      [205, 101, 280, 129]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem2"
+		Location		[146, 365, 486, 481]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slpoe"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slpoe"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [5, 0]
+		    Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch2"
+	      Position		      [215, 168, 245, 212]
+	      Threshold		      "1"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Timer R1"
+	      Ports		      [2, 1]
+	      Position		      [575, 192, 665, 308]
+	      TreatAsAtomicUnit	      off
+	      MaskPromptString	      "Cycle Time [s]"
+	      MaskStyleString	      "edit"
+	      MaskTunableValueString  "on"
+	      MaskEnableString	      "on"
+	      MaskVisibilityString    "on"
+	      MaskToolTipString	      "on"
+	      MaskVariables	      "TC=@1;"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "TC"
+	      System {
+		Name			"Timer R1"
+		Location		[8, 178, 1008, 672]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Start"
+		  Position		  [50, 218, 80, 232]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Reset"
+		  Position		  [50, 253, 80, 267]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  Position		  [455, 275, 485, 305]
+		  Orientation		  "left"
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  Position		  [525, 150, 555, 180]
+		  Orientation		  "left"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  Position		  [610, 285, 640, 315]
+		  Orientation		  "left"
+		  Value			  "TC"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion1"
+		  Position		  [105, 211, 160, 239]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion2"
+		  Position		  [265, 246, 320, 274]
+		  ShowName		  off
+		  DataType		  "double"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion3"
+		  Position		  [105, 246, 160, 274]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion5"
+		  Position		  [265, 211, 320, 239]
+		  ShowName		  off
+		  DataType		  "double"
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "Integrator"
+		  Ports			  [2, 1]
+		  Position		  [525, 200, 555, 240]
+		  ExternalReset		  "level"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  Position		  [610, 211, 640, 249]
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "S-R\nFlip-Flop"
+		  Ports			  [2, 2]
+		  Position		  [190, 205, 235, 280]
+		  SourceBlock		  "simulink_extras/Flip Flops/S-R\nFli"
+"p-Flop"
+		  SourceType		  "SRFlipFlop"
+		  initial_condition	  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [375, 189, 410, 231]
+		  Threshold		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [455, 188, 485, 232]
+		  Threshold		  "1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Time elapse"
+		  Position		  [705, 223, 735, 237]
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion5"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion2"
+		  SrcPort		  1
+		  Points		  [185, 0]
+		  DstBlock		  "Integrator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  2
+		  DstBlock		  "Data Type Conversion2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Start"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion1"
+		  SrcPort		  1
+		  DstBlock		  "S-R\nFlip-Flop"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Reset"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion3"
+		  SrcPort		  1
+		  DstBlock		  "S-R\nFlip-Flop"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "Integrator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  Points		  [-25, 0; 0, -60]
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [-20, 0]
+		  Branch {
+		    Points		    [-80, 0; 0, -95]
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		  }
+		}
+		Line {
+		  SrcBlock		  "Integrator"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  Points		  [30, 0]
+		  Branch {
+		    Points		    [0, -90; -340, 0; 0, 70]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Time elapse"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  Points		  [-90, 0; 0, 30]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [801, 79]
+		}
+		Annotation {
+		  Position		  [765, 303]
+		}
+		Annotation {
+		  Position		  [851, 209]
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Timer R2"
+	      Ports		      [2, 1]
+	      Position		      [415, 192, 505, 308]
+	      TreatAsAtomicUnit	      off
+	      MaskPromptString	      "Open time [s]"
+	      MaskStyleString	      "edit"
+	      MaskTunableValueString  "on"
+	      MaskEnableString	      "on"
+	      MaskVisibilityString    "on"
+	      MaskToolTipString	      "on"
+	      MaskVariables	      "TO=@1;"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "TO"
+	      System {
+		Name			"Timer R2"
+		Location		[2, 78, 1022, 718]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Start"
+		  Position		  [50, 218, 80, 232]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Reset"
+		  Position		  [50, 253, 80, 267]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  Position		  [455, 275, 485, 305]
+		  Orientation		  "left"
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant2"
+		  Position		  [525, 150, 555, 180]
+		  Orientation		  "left"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  Position		  [610, 285, 640, 315]
+		  Orientation		  "left"
+		  Value			  "TO"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion1"
+		  Position		  [105, 211, 160, 239]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion2"
+		  Position		  [265, 246, 320, 274]
+		  ShowName		  off
+		  DataType		  "double"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion3"
+		  Position		  [105, 246, 160, 274]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion5"
+		  Position		  [265, 211, 320, 239]
+		  ShowName		  off
+		  DataType		  "double"
+		}
+		Block {
+		  BlockType		  Integrator
+		  Name			  "Integrator"
+		  Ports			  [2, 1]
+		  Position		  [525, 200, 555, 240]
+		  ExternalReset		  "level"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  Position		  [610, 211, 640, 249]
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "S-R\nFlip-Flop"
+		  Ports			  [2, 2]
+		  Position		  [190, 205, 235, 280]
+		  SourceBlock		  "simulink_extras/Flip Flops/S-R\nFli"
+"p-Flop"
+		  SourceType		  "SRFlipFlop"
+		  initial_condition	  "0"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  Position		  [375, 189, 410, 231]
+		  Threshold		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [455, 188, 485, 232]
+		  Threshold		  "1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Time elapse"
+		  Position		  [705, 223, 735, 237]
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion5"
+		  SrcPort		  1
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion2"
+		  SrcPort		  1
+		  Points		  [185, 0]
+		  DstBlock		  "Integrator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  2
+		  DstBlock		  "Data Type Conversion2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Start"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion1"
+		  SrcPort		  1
+		  DstBlock		  "S-R\nFlip-Flop"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Reset"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion3"
+		  SrcPort		  1
+		  DstBlock		  "S-R\nFlip-Flop"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "Integrator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  Points		  [-25, 0; 0, -60]
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [-20, 0]
+		  Branch {
+		    Points		    [-80, 0; 0, -95]
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		  }
+		}
+		Line {
+		  SrcBlock		  "Integrator"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  Points		  [30, 0]
+		  Branch {
+		    Points		    [0, -90; -340, 0; 0, 70]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Time elapse"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant2"
+		  SrcPort		  1
+		  Points		  [-90, 0; 0, 30]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Annotation {
+		  Position		  [801, 79]
+		}
+		Annotation {
+		  Position		  [851, 209]
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out"
+	      Position		      [735, 118, 765, 132]
+	    }
+	    Line {
+	      SrcBlock		      "Timer R2"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -125]
+	      DstBlock		      "Out"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion2"
+	      SrcPort		      1
+	      Points		      [-10, 0; 0, -175]
+	      DstBlock		      "Switch2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion1"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [-25, 0; 0, -50]
+	      DstBlock		      "Switch2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Memory2"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch2"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Memory1"
+	      SrcPort		      1
+	      Points		      [0, 0; -85, 0]
+	      Branch {
+		Points			[-155, 0]
+		Branch {
+		  DstBlock		  "Memory2"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, -70]
+		  DstBlock		  "Timer R2"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		Points			[0, -70]
+		DstBlock		"Timer R1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion5"
+	      SrcPort		      1
+	      Points		      [0, 0; 10, 0]
+	      Branch {
+		Points			[0, 75]
+		DstBlock		"Switch2"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Subsystem2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem2"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 45]
+	      DstBlock		      "Logical\nOperator2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Timer R1"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 100]
+	      DstBlock		      "Memory1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator2"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		Points			[155, 0; 0, 45]
+		DstBlock		"Timer R1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"Timer R2"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Hold comand"
+	  Ports			  [3, 1]
+	  Position		  [400, 196, 430, 264]
+	  Operator		  "OR"
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Icrease Command"
+	  Ports			  [3, 1]
+	  Position		  [400, 289, 430, 331]
+	  Operator		  "OR"
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Icrease Command1"
+	  Ports			  [3, 1]
+	  Position		  [405, 129, 435, 171]
+	  Operator		  "OR"
+	  Inputs		  "3"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Icrease Command2"
+	  Ports			  [2, 1]
+	  Position		  [365, 644, 395, 686]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory1"
+	  Position		  [460, 640, 490, 670]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [4, 1]
+	  Position		  [810, 369, 815, 451]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope1"
+	  Ports			  [1]
+	  Position		  [1020, 247, 1055, 323]
+	  Orientation		  "left"
+	  Location		  [26, 64, 493, 754]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "3"
+	  YMin			  "-1"
+	  YMax			  "1"
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope3"
+	  Ports			  [6]
+	  Position		  [890, 283, 925, 372]
+	  Location		  [1, 49, 1025, 739]
+	  Open			  off
+	  NumInputPorts		  "6"
+	  ZoomMode		  "yonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	    axes3		    "%<SignalLabel>"
+	    axes4		    "%<SignalLabel>"
+	    axes5		    "%<SignalLabel>"
+	    axes6		    "%<SignalLabel>"
+	  }
+	  TimeRange		  "3"
+	  YMin			  "0~0~0~-0.025~-90~-5"
+	  YMax			  "1~1~1500~0.225~30~5"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Signal Processing"
+	  Ports			  [4, 19]
+	  Position		  [85, 76, 275, 554]
+	  TreatAsAtomicUnit	  off
+	  Port {
+	    PortNumber		    1
+	    Name		    "Br.App."
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "Slip"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    ">-a"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	  System {
+	    Name		    "Signal Processing"
+	    Location		    [11, 82, 1001, 714]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Omega"
+	      Position		      [65, 68, 95, 82]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "X2_dot"
+	      Position		      [65, 148, 95, 162]
+	      Port		      "2"
+	      Port {
+		PortNumber		1
+		Name			"X2_dot"
+		PropagatedSignals	"Veh. Vel."
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "r_eff"
+	      Position		      [65, 108, 95, 122]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Brake Applic"
+	      Position		      [65, 33, 95, 47]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      " Wheel Accel./Deceleration"
+	      Ports		      [2, 2]
+	      Position		      [190, 239, 310, 326]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			" Wheel Accel./Deceleration"
+		Location		[2, 82, 1014, 722]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "r_eff"
+		  Position		  [25, 38, 55, 52]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Omega"
+		  Position		  [25, 73, 55, 87]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Derivative
+		  Name			  "Derivative"
+		  Position		  [90, 65, 120, 95]
+		  Port {
+		    PortNumber		    1
+		    Name		    "dot"
+		    TestPoint		    off
+		    LinearAnalysisOutput    off
+		    LinearAnalysisInput	    off
+		    RTWStorageClass	    "Auto"
+		    DataLogging		    off
+		    DataLoggingNameMode	    "SignalName"
+		    DataLoggingDecimateData off
+		    DataLoggingDecimation   "2"
+		    DataLoggingLimitDataPoints off
+		    DataLoggingMaxPoints    "5000"
+		  }
+		}
+		Block {
+		  BlockType		  TransferFcn
+		  Name			  "Low-pass filter"
+		  Position		  [180, 61, 240, 99]
+		  Numerator		  "[1.15]"
+		  Denominator		  "[0.0105 1]"
+		  Port {
+		    PortNumber		    1
+		    Name		    "om_dot"
+		    TestPoint		    off
+		    LinearAnalysisOutput    off
+		    LinearAnalysisInput	    off
+		    RTWStorageClass	    "Auto"
+		    DataLogging		    off
+		    DataLoggingNameMode	    "SignalName"
+		    DataLoggingDecimateData off
+		    DataLoggingDecimation   "2"
+		    DataLoggingLimitDataPoints off
+		    DataLoggingMaxPoints    "5000"
+		  }
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product2"
+		  Ports			  [2, 1]
+		  Position		  [300, 29, 325, 96]
+		  Inputs		  "**"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace1"
+		  Position		  [210, 16, 275, 34]
+		  Orientation		  "left"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  VariableName		  "om_dot_per"
+		  MaxDataPoints		  "10000"
+		  SaveFormat		  "Array"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace3"
+		  Position		  [70, 116, 135, 134]
+		  Orientation		  "left"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  VariableName		  "om_dotcont"
+		  MaxDataPoints		  "10000"
+		  SaveFormat		  "Array"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Om_dot_periph."
+		  Position		  [370, 58, 400, 72]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Om_dot_angul."
+		  Position		  [375, 123, 405, 137]
+		  Port			  "2"
+		}
+		Line {
+		  Name			  "om_dot"
+		  Labels		  [0, 1]
+		  SrcBlock		  "Low-pass filter"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    DstBlock		    "Product2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Om_dot_angul."
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Name			  "dot"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Derivative"
+		  SrcPort		  1
+		  Points		  [0, 0; 25, 0]
+		  Branch {
+		    DstBlock		    "Low-pass filter"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "To Workspace3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "r_eff"
+		  SrcPort		  1
+		  DstBlock		  "Product2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Omega"
+		  SrcPort		  1
+		  DstBlock		  "Derivative"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Product2"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    DstBlock		    "Om_dot_periph."
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -40]
+		    DstBlock		    "To Workspace1"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion1"
+	      Position		      [195, 26, 250, 54]
+	      ShowName		      off
+	      DataType		      "boolean"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 1"
+	      Ports		      [2, 1]
+	      Position		      [660, 101, 690, 134]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 10"
+	      Ports		      [2, 1]
+	      Position		      [735, 491, 765, 524]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 11"
+	      Ports		      [2, 1]
+	      Position		      [660, 536, 690, 569]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 12"
+	      Ports		      [2, 1]
+	      Position		      [735, 586, 765, 619]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 13"
+	      Ports		      [2, 1]
+	      Position		      [660, 641, 690, 674]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 14"
+	      Ports		      [2, 1]
+	      Position		      [735, 686, 765, 719]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 15"
+	      Ports		      [2, 1]
+	      Position		      [660, 736, 690, 769]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 2"
+	      Ports		      [2, 1]
+	      Position		      [725, 141, 755, 174]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 3"
+	      Ports		      [2, 1]
+	      Position		      [660, 186, 690, 219]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 4"
+	      Ports		      [2, 1]
+	      Position		      [725, 236, 755, 269]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 5"
+	      Ports		      [2, 1]
+	      Position		      [660, 271, 690, 304]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 6"
+	      Ports		      [2, 1]
+	      Position		      [730, 316, 760, 349]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 7"
+	      Ports		      [2, 1]
+	      Position		      [660, 366, 690, 399]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 8"
+	      Ports		      [2, 1]
+	      Position		      [730, 401, 760, 434]
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Gate 9"
+	      Ports		      [2, 1]
+	      Position		      [660, 446, 690, 479]
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Om_dot / Om"
+	      Ports		      [2, 1]
+	      Position		      [385, 613, 490, 717]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Om_dot / Om"
+		Location		[237, 421, 562, 652]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Om_dot"
+		  Position		  [25, 88, 55, 102]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "Omega"
+		  Position		  [25, 123, 55, 137]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain2"
+		  Position		  [80, 80, 115, 110]
+		  Gain			  "-1"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product"
+		  Ports			  [2, 1]
+		  Position		  [130, 77, 175, 148]
+		  Inputs		  "*/"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  Position		  [215, 107, 245, 138]
+		  Operator		  ">"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Threshold Value"
+		  Position		  [210, 173, 275, 207]
+		  Orientation		  "left"
+		  Value			  "om_dot_om"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace2"
+		  Position		  [105, 29, 175, 51]
+		  Orientation		  "left"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  VariableName		  "om_dotf_om"
+		  MaxDataPoints		  "10000"
+		  SaveFormat		  "Array"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Om_dot / Om"
+		  Position		  [270, 118, 300, 132]
+		}
+		Line {
+		  SrcBlock		  "Threshold Value"
+		  SrcPort		  1
+		  Points		  [-15, 0; 0, -60]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Product"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "To Workspace2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Gain2"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Om_dot"
+		  SrcPort		  1
+		  DstBlock		  "Gain2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "Om_dot / Om"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Omega"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [2, 1]
+	      Position		      [300, 55, 330, 135]
+	      Inputs		      "**"
+	      Port {
+		PortNumber		1
+		Name			"Om*r_eff"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Slip Threshold"
+	      Ports		      [2, 3]
+	      Position		      [390, 53, 500, 137]
+	      TreatAsAtomicUnit	      off
+	      Port {
+		PortNumber		2
+		Name			"Relative Slip"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	      System {
+		Name			"Slip Threshold"
+		Location		[243, 179, 876, 602]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Om*r_eff"
+		  Position		  [25, 68, 55, 82]
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "X2_dot"
+		  Position		  [25, 98, 55, 112]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Fcn
+		  Name			  " Slip Computation"
+		  Position		  [110, 75, 255, 105]
+		  Expr			  "1.0 - u(1)/u(2) "
+		}
+		Block {
+		  BlockType		  Mux
+		  Name			  "Mux"
+		  Ports			  [2, 1]
+		  Position		  [80, 60, 85, 120]
+		  ShowName		  off
+		  Inputs		  "2"
+		  DisplayOption		  "bar"
+		  Port {
+		    PortNumber		    1
+		    Name		    "Vehicle-Wheel Vel."
+		    PropagatedSignals	    "Om*r_eff, X2_dot"
+		    TestPoint		    off
+		    LinearAnalysisOutput    off
+		    LinearAnalysisInput	    off
+		    RTWStorageClass	    "Auto"
+		    DataLogging		    off
+		    DataLoggingNameMode	    "SignalName"
+		    DataLoggingDecimateData off
+		    DataLoggingDecimation   "2"
+		    DataLoggingLimitDataPoints off
+		    DataLoggingMaxPoints    "5000"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Slip Comparator"
+		  Position		  [345, 82, 375, 113]
+		  Operator		  ">"
+		  Port {
+		    PortNumber		    1
+		    Name		    "Slip exceed"
+		    TestPoint		    off
+		    LinearAnalysisOutput    off
+		    LinearAnalysisInput	    off
+		    RTWStorageClass	    "Auto"
+		    DataLogging		    off
+		    DataLoggingNameMode	    "SignalName"
+		    DataLoggingDecimateData off
+		    DataLoggingDecimation   "2"
+		    DataLoggingLimitDataPoints off
+		    DataLoggingMaxPoints    "5000"
+		  }
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Slip Comparator1"
+		  Position		  [350, 207, 380, 238]
+		  Operator		  ">"
+		  Port {
+		    PortNumber		    1
+		    Name		    "Slip exceed"
+		    TestPoint		    off
+		    LinearAnalysisOutput    off
+		    LinearAnalysisInput	    off
+		    RTWStorageClass	    "Auto"
+		    DataLogging		    off
+		    DataLoggingNameMode	    "SignalName"
+		    DataLoggingDecimateData off
+		    DataLoggingDecimation   "2"
+		    DataLoggingLimitDataPoints off
+		    DataLoggingMaxPoints    "5000"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Slip set-poit"
+		  Position		  [325, 142, 380, 178]
+		  Orientation		  "left"
+		  Value			  "0.01*Slip"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Slip set-poit1"
+		  Position		  [330, 266, 420, 304]
+		  Orientation		  "left"
+		  Value			  "0.01*Slipmin"
+		}
+		Block {
+		  BlockType		  ToWorkspace
+		  Name			  "To Workspace18"
+		  Position		  [200, 30, 250, 50]
+		  Orientation		  "left"
+		  NamePlacement		  "alternate"
+		  ShowName		  off
+		  VariableName		  "slip_est"
+		  MaxDataPoints		  "10000"
+		  SaveFormat		  "Array"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Comp. S-min"
+		  Position		  [455, 218, 485, 232]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Slip"
+		  Position		  [445, 18, 475, 32]
+		  Port			  "2"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Comp.Output"
+		  Position		  [445, 93, 475, 107]
+		  Port			  "3"
+		}
+		Line {
+		  SrcBlock		  "Slip set-poit"
+		  SrcPort		  1
+		  Points		  [-10, 0; 0, -55]
+		  DstBlock		  "Slip Comparator"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Vehicle-Wheel Vel."
+		  SrcBlock		  "Mux"
+		  SrcPort		  1
+		  DstBlock		  " Slip Computation"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " Slip Computation"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, -50]
+		    DstBlock		    "To Workspace18"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [20, 0]
+		    Branch {
+		    Points		    [15, 0]
+		    Branch {
+		    DstBlock		    "Slip Comparator"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Slip"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    Points		    [0, 125]
+		    DstBlock		    "Slip Comparator1"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Line {
+		  SrcBlock		  "Om*r_eff"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "Slip exceed"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Slip Comparator"
+		  SrcPort		  1
+		  DstBlock		  "Comp.Output"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "X2_dot"
+		  SrcPort		  1
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Slip set-poit1"
+		  SrcPort		  1
+		  Points		  [-10, 0; 0, -55]
+		  DstBlock		  "Slip Comparator1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "Slip exceed"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Slip Comparator1"
+		  SrcPort		  1
+		  DstBlock		  "Comp. S-min"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem1"
+	      Ports		      [1, 1]
+	      Position		      [530, 51, 605, 79]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem1"
+		Location		[253, 361, 593, 477]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem10"
+	      Ports		      [1, 1]
+	      Position		      [535, 326, 610, 354]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem10"
+		Location		[683, 605, 1023, 721]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem11"
+	      Ports		      [1, 1]
+	      Position		      [535, 196, 610, 224]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem11"
+		Location		[253, 361, 593, 477]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem12"
+	      Ports		      [1, 1]
+	      Position		      [535, 151, 610, 179]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem12"
+		Location		[154, 329, 494, 445]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem13"
+	      Ports		      [1, 1]
+	      Position		      [535, 696, 610, 724]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem13"
+		Location		[154, 329, 494, 445]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem14"
+	      Ports		      [1, 1]
+	      Position		      [535, 746, 610, 774]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem14"
+		Location		[683, 605, 1023, 721]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem3"
+	      Ports		      [1, 1]
+	      Position		      [535, 546, 610, 574]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem3"
+		Location		[154, 329, 494, 445]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem5"
+	      Ports		      [1, 1]
+	      Position		      [535, 411, 610, 439]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem5"
+		Location		[154, 329, 494, 445]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem7"
+	      Ports		      [1, 1]
+	      Position		      [535, 456, 610, 484]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem7"
+		Location		[683, 605, 1023, 721]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem8"
+	      Ports		      [1, 1]
+	      Position		      [535, 596, 610, 624]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem8"
+		Location		[683, 605, 1023, 721]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Neg. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Neg. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem9"
+	      Ports		      [1, 1]
+	      Position		      [535, 281, 610, 309]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Subsystem9"
+		Location		[154, 329, 494, 445]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [25, 48, 55, 62]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [165, 47, 195, 78]
+		  Operator		  "XOR"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [230, 27, 260, 58]
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [95, 40, 125, 70]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Pos. Slope"
+		  Position		  [285, 38, 315, 52]
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Pos. Slope"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [10, 0; 0, -15]
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Threshold  A, +a"
+	      Ports		      [1, 2]
+	      Position		      [385, 445, 490, 540]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Threshold  A, +a"
+		Location		[2, 82, 1014, 722]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Om_dot_periph."
+		  Position		  [25, 28, 55, 42]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "+a Comparator1"
+		  Position		  [170, 137, 200, 168]
+		  Operator		  ">"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "+a positive acc."
+		  Position		  [170, 186, 200, 214]
+		  Orientation		  "left"
+		  Value			  "pos_a"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "A Comparator"
+		  Position		  [170, 27, 200, 58]
+		  Operator		  ">"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "A positive acc."
+		  Position		  [170, 81, 200, 109]
+		  Orientation		  "left"
+		  Value			  "A"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  " > A"
+		  Position		  [275, 38, 305, 52]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "> +a"
+		  Position		  [280, 148, 310, 162]
+		  Port			  "2"
+		}
+		Line {
+		  SrcBlock		  "+a Comparator1"
+		  SrcPort		  1
+		  DstBlock		  "> +a"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "+a positive acc."
+		  SrcPort		  1
+		  Points		  [-40, 0; 0, -40]
+		  DstBlock		  "+a Comparator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "A Comparator"
+		  SrcPort		  1
+		  DstBlock		  " > A"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "A positive acc."
+		  SrcPort		  1
+		  Points		  [-25, 0; 0, -45]
+		  DstBlock		  "A Comparator"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Om_dot_periph."
+		  SrcPort		  1
+		  Points		  [0, 0; 65, 0]
+		  Branch {
+		    DstBlock		    "A Comparator"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 110]
+		    DstBlock		    "+a Comparator1"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Threshold -a"
+	      Ports		      [1, 1]
+	      Position		      [385, 239, 495, 281]
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"Threshold -a"
+		Location		[2, 82, 1014, 722]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Om_dot_periph."
+		  Position		  [350, 248, 380, 262]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "-a Comparator1"
+		  Position		  [535, 247, 565, 278]
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "-a negative acc."
+		  Position		  [540, 304, 580, 336]
+		  Orientation		  "left"
+		  Value			  "neg_a"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain2"
+		  Position		  [435, 240, 475, 270]
+		  Gain			  "-1"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "> -a"
+		  Position		  [625, 258, 655, 272]
+		}
+		Line {
+		  SrcBlock		  "Gain2"
+		  SrcPort		  1
+		  DstBlock		  "-a Comparator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "-a Comparator1"
+		  SrcPort		  1
+		  DstBlock		  "> -a"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "-a negative acc."
+		  SrcPort		  1
+		  Points		  [-35, 0; 0, -50]
+		  DstBlock		  "-a Comparator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Om_dot_periph."
+		  SrcPort		  1
+		  DstBlock		  "Gain2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Brake Applic."
+	      Position		      [850, 33, 880, 47]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      ">Slip"
+	      Position		      [810, 113, 840, 127]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos. Slope >Slip"
+	      Position		      [810, 153, 840, 167]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Neg. Slope >Slip"
+	      Position		      [810, 198, 840, 212]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      ">-a"
+	      Position		      [850, 248, 880, 262]
+	      Port		      "5"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos. Slope -a"
+	      Position		      [850, 283, 880, 297]
+	      Port		      "6"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Neg. Slope -a"
+	      Position		      [850, 328, 880, 342]
+	      Port		      "7"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      ">A"
+	      Position		      [815, 378, 845, 392]
+	      Port		      "8"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos. Slope >A"
+	      Position		      [815, 413, 845, 427]
+	      Port		      "9"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Neg. Slope >A\n"
+	      Position		      [815, 458, 845, 472]
+	      Port		      "10"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      ">+a"
+	      Position		      [850, 503, 880, 517]
+	      Port		      "11"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos. Slope >+a"
+	      Position		      [850, 548, 880, 562]
+	      Port		      "12"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Neg. Slope >+a"
+	      Position		      [850, 598, 880, 612]
+	      Port		      "13"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Om_dot/Om"
+	      Position		      [820, 653, 850, 667]
+	      Port		      "14"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Pos. Slope Om_dot/Om"
+	      Position		      [820, 698, 850, 712]
+	      Port		      "15"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Neg. Slope Om_dot/Om"
+	      Position		      [820, 748, 850, 762]
+	      Port		      "16"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Slip."
+	      Position		      [810, 78, 840, 92]
+	      Port		      "17"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      " Om_dot*r_eff"
+	      Position		      [855, 808, 885, 822]
+	      Port		      "18"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Smin Neg.Sl."
+	      Position		      [760, 58, 790, 72]
+	      Port		      "19"
+	    }
+	    Line {
+	      SrcBlock		      "Brake Applic"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Om*r_eff"
+	      Labels		      [0, 1]
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      DstBlock		      "Slip Threshold"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "X2_dot"
+	      Labels		      [-1, 1]
+	      SrcBlock		      "X2_dot"
+	      SrcPort		      1
+	      Points		      [260, 0; 0, -40]
+	      DstBlock		      "Slip Threshold"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "r_eff"
+	      SrcPort		      1
+	      Points		      [65, 0]
+	      Branch {
+		DstBlock		"Product1"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 145]
+		DstBlock		" Wheel Accel./Deceleration"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Omega"
+	      SrcPort		      1
+	      Points		      [45, 0]
+	      Branch {
+		Points			[0, 230]
+		Branch {
+		  Points		  [0, 385]
+		  DstBlock		  "Om_dot / Om"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  " Wheel Accel./Deceleration"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		Labels			[-1, 1]
+		DstBlock		"Product1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Threshold  A, +a"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"Subsystem7"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -45]
+		Branch {
+		  DstBlock		  "Subsystem5"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, -35]
+		  DstBlock		  "Gate 7"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Threshold  A, +a"
+	      SrcPort		      2
+	      Points		      [15, 0]
+	      Branch {
+		Points			[0, 45]
+		Branch {
+		  Points		  [15, 0]
+		  DstBlock		  "Subsystem3"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 50]
+		  DstBlock		  "Subsystem8"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Gate 10"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem8"
+	      SrcPort		      1
+	      DstBlock		      "Gate 12"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem3"
+	      SrcPort		      1
+	      DstBlock		      "Gate 11"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem7"
+	      SrcPort		      1
+	      DstBlock		      "Gate 9"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem5"
+	      SrcPort		      1
+	      DstBlock		      "Gate 8"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem10"
+	      SrcPort		      1
+	      DstBlock		      "Gate 6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem9"
+	      SrcPort		      1
+	      DstBlock		      "Gate 5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Threshold -a"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 35]
+		Branch {
+		  Points		  [0, 45]
+		  DstBlock		  "Subsystem10"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "Subsystem9"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Gate 4"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem11"
+	      SrcPort		      1
+	      DstBlock		      "Gate 3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem12"
+	      SrcPort		      1
+	      DstBlock		      "Gate 2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Slip Threshold"
+	      SrcPort		      3
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 40]
+		Branch {
+		  DstBlock		  "Subsystem12"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 45]
+		  DstBlock		  "Subsystem11"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Gate 1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Om_dot / Om"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		Points			[0, 45]
+		Branch {
+		  DstBlock		  "Subsystem13"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 50]
+		  DstBlock		  "Subsystem14"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Gate 13"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem14"
+	      SrcPort		      1
+	      DstBlock		      "Gate 15"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem13"
+	      SrcPort		      1
+	      DstBlock		      "Gate 14"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion1"
+	      SrcPort		      1
+	      Points		      [375, 0]
+	      Branch {
+		Points			[0, 70]
+		Branch {
+		  DstBlock		  "Gate 1"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 85]
+		  Branch {
+		    DstBlock		    "Gate 3"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 85]
+		    Branch {
+		    DstBlock		    "Gate 5"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 95]
+		    Branch {
+		    Points		    [0, 0]
+		    DstBlock		    "Gate 7"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 80]
+		    Branch {
+		    DstBlock		    "Gate 9"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 90]
+		    Branch {
+		    DstBlock		    "Gate 11"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 105]
+		    Branch {
+		    DstBlock		    "Gate 13"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 95]
+		    DstBlock		    "Gate 15"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    }
+		    }
+		  }
+		}
+	      }
+	      Branch {
+		Points			[75, 0]
+		Branch {
+		  DstBlock		  "Brake Applic."
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 110]
+		  Branch {
+		    DstBlock		    "Gate 2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 95]
+		    Branch {
+		    DstBlock		    "Gate 4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 80]
+		    Branch {
+		    DstBlock		    "Gate 6"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 85]
+		    Branch {
+		    DstBlock		    "Gate 8"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 90]
+		    Branch {
+		    Points		    [0, 0]
+		    DstBlock		    "Gate 10"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 95]
+		    Branch {
+		    DstBlock		    "Gate 12"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 100]
+		    DstBlock		    "Gate 14"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Gate 1"
+	      SrcPort		      1
+	      DstBlock		      ">Slip"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 2"
+	      SrcPort		      1
+	      DstBlock		      "Pos. Slope >Slip"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 3"
+	      SrcPort		      1
+	      DstBlock		      "Neg. Slope >Slip"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 4"
+	      SrcPort		      1
+	      DstBlock		      ">-a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 5"
+	      SrcPort		      1
+	      DstBlock		      "Pos. Slope -a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 6"
+	      SrcPort		      1
+	      DstBlock		      "Neg. Slope -a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 7"
+	      SrcPort		      1
+	      DstBlock		      ">A"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 8"
+	      SrcPort		      1
+	      DstBlock		      "Pos. Slope >A"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 9"
+	      SrcPort		      1
+	      DstBlock		      "Neg. Slope >A\n"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 10"
+	      SrcPort		      1
+	      DstBlock		      ">+a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 11"
+	      SrcPort		      1
+	      DstBlock		      "Pos. Slope >+a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 13"
+	      SrcPort		      1
+	      DstBlock		      "Om_dot/Om"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 14"
+	      SrcPort		      1
+	      DstBlock		      "Pos. Slope Om_dot/Om"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gate 15"
+	      SrcPort		      1
+	      DstBlock		      "Neg. Slope Om_dot/Om"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Wheel Accel./Deceleration"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      Branch {
+		Points			[0, 235]
+		Branch {
+		  Points		  [0, 320]
+		  DstBlock		  " Om_dot*r_eff"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "Threshold  A, +a"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Threshold -a"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Gate 12"
+	      SrcPort		      1
+	      DstBlock		      "Neg. Slope >+a"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Relative Slip"
+	      SrcBlock		      "Slip Threshold"
+	      SrcPort		      2
+	      Points		      [0, -10]
+	      DstBlock		      "Slip."
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Wheel Accel./Deceleration"
+	      SrcPort		      2
+	      Points		      [15, 0; 0, 335]
+	      DstBlock		      "Om_dot / Om"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Slip Threshold"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem1"
+	      SrcPort		      1
+	      DstBlock		      "Smin Neg.Sl."
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  Ports			  [4, 3]
+	  Position		  [465, 112, 595, 428]
+	  TreatAsAtomicUnit	  off
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [86, 94, 858, 548]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Decrease Comm."
+	      Position		      [105, 33, 135, 47]
+	      Port {
+		PortNumber		1
+		Name			"Slip"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Hold Comm."
+	      Position		      [105, 118, 135, 132]
+	      Port		      "2"
+	      Port {
+		PortNumber		1
+		Name			"hold Comm."
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Increase. Comm."
+	      Position		      [105, 338, 135, 352]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Stop Dec. Comm."
+	      Position		      [105, 373, 135, 387]
+	      Port		      "4"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Decrease command"
+	      Ports		      [2, 1]
+	      Position		      [435, 29, 465, 76]
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Generator"
+	      Ports		      [1, 1]
+	      Position		      [420, 219, 470, 281]
+	      TreatAsAtomicUnit	      off
+	      MaskPromptString	      "Valve open [s]|Valve closed [s]"
+	      MaskStyleString	      "edit,edit"
+	      MaskTunableValueString  "on,on"
+	      MaskCallbackString      "|"
+	      MaskEnableString	      "on,on"
+	      MaskVisibilityString    "on,on"
+	      MaskToolTipString	      "on,on"
+	      MaskVarAliasString      ","
+	      MaskVariables	      "TO=@1;TC=@2;"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "TO|TC"
+	      System {
+		Name			"Generator"
+		Location		[2, 82, 1014, 732]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In"
+		  Position		  [65, 108, 95, 122]
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  Position		  [215, 240, 245, 270]
+		  Orientation		  "left"
+		  Value			  "0"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion1"
+		  Position		  [270, 175, 315, 205]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion2"
+		  Position		  [185, 336, 240, 364]
+		  Orientation		  "left"
+		  ShowName		  off
+		  DataType		  "double"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Data Type Conversion5"
+		  Position		  [120, 101, 165, 129]
+		  ShowName		  off
+		  DataType		  "boolean"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  Ports			  [2, 1]
+		  Position		  [345, 143, 375, 207]
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory1"
+		  Position		  [640, 335, 670, 365]
+		  Orientation		  "left"
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory2"
+		  Position		  [280, 335, 310, 365]
+		  Orientation		  "left"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Subsystem2"
+		  Ports			  [1, 1]
+		  Position		  [205, 101, 280, 129]
+		  TreatAsAtomicUnit	  off
+		  System {
+		    Name		    "Subsystem2"
+		    Location		    [146, 365, 486, 481]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In1"
+		    Position		    [25, 48, 55, 62]
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator2"
+		    Ports		    [2, 1]
+		    Position		    [165, 47, 195, 78]
+		    Operator		    "XOR"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator3"
+		    Ports		    [2, 1]
+		    Position		    [230, 27, 260, 58]
+		    }
+		    Block {
+		    BlockType		    Memory
+		    Name		    "Memory"
+		    Position		    [95, 40, 125, 70]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Pos. Slpoe"
+		    Position		    [285, 38, 315, 52]
+		    }
+		    Line {
+		    SrcBlock		    "Logical\nOperator3"
+		    SrcPort		    1
+		    DstBlock		    "Pos. Slpoe"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "In1"
+		    SrcPort		    1
+		    Points		    [0, 0; 15, 0]
+		    Branch {
+		    Points		    [5, 0]
+		    Branch {
+		    Points		    [0, -20]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Memory"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    Points		    [0, 35; 70, 0; 0, -20]
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Logical\nOperator2"
+		    SrcPort		    1
+		    Points		    [10, 0; 0, -15]
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Memory"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  Position		  [215, 168, 245, 212]
+		  Threshold		  "1"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Timer R1"
+		  Ports			  [2, 1]
+		  Position		  [575, 192, 665, 308]
+		  TreatAsAtomicUnit	  off
+		  MaskPromptString	  "Cycle Time [s]"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "on"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "TC=@1;"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "TC"
+		  System {
+		    Name		    "Timer R1"
+		    Location		    [8, 178, 1008, 672]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Start"
+		    Position		    [50, 218, 80, 232]
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Reset"
+		    Position		    [50, 253, 80, 267]
+		    Port		    "2"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    Position		    [455, 275, 485, 305]
+		    Orientation		    "left"
+		    Value		    "0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant2"
+		    Position		    [525, 150, 555, 180]
+		    Orientation		    "left"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant3"
+		    Position		    [610, 285, 640, 315]
+		    Orientation		    "left"
+		    Value		    "TC"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion1"
+		    Position		    [105, 211, 160, 239]
+		    ShowName		    off
+		    DataType		    "boolean"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion2"
+		    Position		    [265, 246, 320, 274]
+		    ShowName		    off
+		    DataType		    "double"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion3"
+		    Position		    [105, 246, 160, 274]
+		    ShowName		    off
+		    DataType		    "boolean"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion5"
+		    Position		    [265, 211, 320, 239]
+		    ShowName		    off
+		    DataType		    "double"
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "Integrator"
+		    Ports		    [2, 1]
+		    Position		    [525, 200, 555, 240]
+		    ExternalReset	    "level"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    Position		    [610, 211, 640, 249]
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "S-R\nFlip-Flop"
+		    Ports		    [2, 2]
+		    Position		    [190, 205, 235, 280]
+		    SourceBlock		    "simulink_extras/Flip Flops/S-R\nF"
+"lip-Flop"
+		    SourceType		    "SRFlipFlop"
+		    initial_condition	    "0"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch1"
+		    Position		    [375, 189, 410, 231]
+		    Threshold		    "1"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch2"
+		    Position		    [455, 188, 485, 232]
+		    Threshold		    "1"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Time elapse"
+		    Position		    [705, 223, 735, 237]
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion5"
+		    SrcPort		    1
+		    DstBlock		    "Switch1"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "S-R\nFlip-Flop"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion5"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion2"
+		    SrcPort		    1
+		    Points		    [185, 0]
+		    DstBlock		    "Integrator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "S-R\nFlip-Flop"
+		    SrcPort		    2
+		    DstBlock		    "Data Type Conversion2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Start"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion1"
+		    SrcPort		    1
+		    DstBlock		    "S-R\nFlip-Flop"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Reset"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion3"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion3"
+		    SrcPort		    1
+		    DstBlock		    "S-R\nFlip-Flop"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Switch2"
+		    SrcPort		    1
+		    DstBlock		    "Integrator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant3"
+		    SrcPort		    1
+		    Points		    [-25, 0; 0, -60]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    Points		    [-20, 0]
+		    Branch {
+		    Points		    [-80, 0; 0, -95]
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Integrator"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
+		    Points		    [0, -90; -340, 0; 0, 70]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Time elapse"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Switch1"
+		    SrcPort		    1
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant2"
+		    SrcPort		    1
+		    Points		    [-90, 0; 0, 30]
+		    DstBlock		    "Switch2"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    Position		    [801, 79]
+		    }
+		    Annotation {
+		    Position		    [765, 303]
+		    }
+		    Annotation {
+		    Position		    [851, 209]
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Timer R2"
+		  Ports			  [2, 1]
+		  Position		  [415, 192, 505, 308]
+		  TreatAsAtomicUnit	  off
+		  MaskPromptString	  "Open time [s]"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "on"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "TO=@1;"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  on
+		  MaskIconRotate	  "none"
+		  MaskIconUnits		  "autoscale"
+		  MaskValueString	  "TO"
+		  System {
+		    Name		    "Timer R2"
+		    Location		    [2, 78, 1022, 718]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Start"
+		    Position		    [50, 218, 80, 232]
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Reset"
+		    Position		    [50, 253, 80, 267]
+		    Port		    "2"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    Position		    [455, 275, 485, 305]
+		    Orientation		    "left"
+		    Value		    "0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant2"
+		    Position		    [525, 150, 555, 180]
+		    Orientation		    "left"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant3"
+		    Position		    [610, 285, 640, 315]
+		    Orientation		    "left"
+		    Value		    "TO"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion1"
+		    Position		    [105, 211, 160, 239]
+		    ShowName		    off
+		    DataType		    "boolean"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion2"
+		    Position		    [265, 246, 320, 274]
+		    ShowName		    off
+		    DataType		    "double"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion3"
+		    Position		    [105, 246, 160, 274]
+		    ShowName		    off
+		    DataType		    "boolean"
+		    }
+		    Block {
+		    BlockType		    DataTypeConversion
+		    Name		    "Data Type Conversion5"
+		    Position		    [265, 211, 320, 239]
+		    ShowName		    off
+		    DataType		    "double"
+		    }
+		    Block {
+		    BlockType		    Integrator
+		    Name		    "Integrator"
+		    Ports		    [2, 1]
+		    Position		    [525, 200, 555, 240]
+		    ExternalReset	    "level"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    Position		    [610, 211, 640, 249]
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "S-R\nFlip-Flop"
+		    Ports		    [2, 2]
+		    Position		    [190, 205, 235, 280]
+		    SourceBlock		    "simulink_extras/Flip Flops/S-R\nF"
+"lip-Flop"
+		    SourceType		    "SRFlipFlop"
+		    initial_condition	    "0"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch1"
+		    Position		    [375, 189, 410, 231]
+		    Threshold		    "1"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch2"
+		    Position		    [455, 188, 485, 232]
+		    Threshold		    "1"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Time elapse"
+		    Position		    [705, 223, 735, 237]
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion5"
+		    SrcPort		    1
+		    DstBlock		    "Switch1"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "S-R\nFlip-Flop"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion5"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion2"
+		    SrcPort		    1
+		    Points		    [185, 0]
+		    DstBlock		    "Integrator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "S-R\nFlip-Flop"
+		    SrcPort		    2
+		    DstBlock		    "Data Type Conversion2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Start"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion1"
+		    SrcPort		    1
+		    DstBlock		    "S-R\nFlip-Flop"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Reset"
+		    SrcPort		    1
+		    DstBlock		    "Data Type Conversion3"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Data Type Conversion3"
+		    SrcPort		    1
+		    DstBlock		    "S-R\nFlip-Flop"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Switch2"
+		    SrcPort		    1
+		    DstBlock		    "Integrator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant3"
+		    SrcPort		    1
+		    Points		    [-25, 0; 0, -60]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    Points		    [-20, 0]
+		    Branch {
+		    Points		    [-80, 0; 0, -95]
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -65]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Integrator"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    Points		    [30, 0]
+		    Branch {
+		    Points		    [0, -90; -340, 0; 0, 70]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Time elapse"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Switch1"
+		    SrcPort		    1
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant2"
+		    SrcPort		    1
+		    Points		    [-90, 0; 0, 30]
+		    DstBlock		    "Switch2"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    Position		    [801, 79]
+		    }
+		    Annotation {
+		    Position		    [851, 209]
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out"
+		  Position		  [735, 118, 765, 132]
+		}
+		Line {
+		  SrcBlock		  "Timer R2"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, -125]
+		  DstBlock		  "Out"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion2"
+		  SrcPort		  1
+		  Points		  [-10, 0; 0, -175]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [-25, 0; 0, -50]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Memory2"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Memory1"
+		  SrcPort		  1
+		  Points		  [0, 0; -85, 0]
+		  Branch {
+		    Points		    [-155, 0]
+		    Branch {
+		    DstBlock		    "Memory2"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -70]
+		    DstBlock		    "Timer R2"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    Points		    [0, -70]
+		    DstBlock		    "Timer R1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "Data Type Conversion5"
+		  SrcPort		  1
+		  Points		  [0, 0; 10, 0]
+		  Branch {
+		    Points		    [0, 75]
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Subsystem2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Subsystem2"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, 45]
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In"
+		  SrcPort		  1
+		  DstBlock		  "Data Type Conversion5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Timer R1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, 100]
+		  DstBlock		  "Memory1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  Points		  [0, 0; 15, 0]
+		  Branch {
+		    Points		    [155, 0; 0, 45]
+		    DstBlock		    "Timer R1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Timer R2"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Inlet Valve \nControl"
+	      Ports		      [2, 2]
+	      Position		      [195, 146, 245, 279]
+	      SourceBlock	      "simulink_extras/Flip Flops/S-R\nFlip-Fl"
+"op"
+	      SourceType	      "SRFlipFlop"
+	      initial_condition	      "0"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator4"
+	      Ports		      [2, 1]
+	      Position		      [315, 191, 350, 304]
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "One Cycle Indicator"
+	      Ports		      [1, 1]
+	      Position		      [290, 101, 355, 129]
+	      Orientation	      "left"
+	      TreatAsAtomicUnit	      off
+	      System {
+		Name			"One Cycle Indicator"
+		Location		[2, 82, 1014, 732]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In"
+		  Position		  [320, 363, 350, 377]
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator3"
+		  Ports			  [2, 1]
+		  Position		  [460, 317, 490, 388]
+		  Operator		  "OR"
+		}
+		Block {
+		  BlockType		  Memory
+		  Name			  "Memory"
+		  Position		  [395, 320, 425, 350]
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "S-R\nFlip-Flop"
+		  Ports			  [2, 2]
+		  Position		  [440, 195, 485, 270]
+		  Orientation		  "left"
+		  SourceBlock		  "simulink_extras/Flip Flops/S-R\nFli"
+"p-Flop"
+		  SourceType		  "SRFlipFlop"
+		  initial_condition	  "0"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  Position		  [400, 240, 420, 260]
+		  Orientation		  "left"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Q"
+		  Position		  [580, 293, 610, 307]
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  2
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "S-R\nFlip-Flop"
+		  SrcPort		  1
+		  Points		  [-60, 0; 0, 120]
+		  DstBlock		  "Memory"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Memory"
+		  SrcPort		  1
+		  Points		  [5, 0]
+		  Branch {
+		    Points		    [0, -35]
+		    DstBlock		    "Q"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Logical\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Logical\nOperator3"
+		  SrcPort		  1
+		  Points		  [15, 0; 0, -140]
+		  DstBlock		  "S-R\nFlip-Flop"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Outlet Valve\nControl"
+	      Ports		      [2, 2]
+	      Position		      [560, 60, 605, 135]
+	      SourceBlock	      "simulink_extras/Flip Flops/S-R\nFlip-Fl"
+"op"
+	      SourceType	      "SRFlipFlop"
+	      initial_condition	      "0"
+	      Port {
+		PortNumber		1
+		Name			"out v"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Stop Decrease"
+	      Ports		      [2, 1]
+	      Position		      [475, 326, 500, 399]
+	      Operator		      "OR"
+	      Port {
+		PortNumber		1
+		Name			"Reset Dec."
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [435, 141, 470, 189]
+	      Port {
+		PortNumber		1
+		Name			"In Val"
+		TestPoint		off
+		LinearAnalysisOutput	off
+		LinearAnalysisInput	off
+		RTWStorageClass		"Auto"
+		DataLogging		off
+		DataLoggingNameMode	"SignalName"
+		DataLoggingDecimateData	off
+		DataLoggingDecimation	"2"
+		DataLoggingLimitDataPoints off
+		DataLoggingMaxPoints	"5000"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      Position		      [630, 105, 650, 125]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Outlet Valve"
+	      Position		      [685, 73, 715, 87]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Inlet Valve"
+	      Position		      [685, 158, 715, 172]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Sec increase"
+	      Position		      [685, 288, 715, 302]
+	      Port		      "3"
+	    }
+	    Line {
+	      SrcBlock		      "Decrease command"
+	      SrcPort		      1
+	      Points		      [70, 0; 0, 25]
+	      DstBlock		      "Outlet Valve\nControl"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Inlet Valve \nControl"
+	      SrcPort		      1
+	      Points		      [50, 0; 80, 0]
+	      Branch {
+		Points			[15, 0]
+		DstBlock		"Switch"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -65; 0, 0]
+		Branch {
+		  Points		  [0, 0; 0, -50]
+		  DstBlock		  "Decrease command"
+		  DstPort		  2
+		}
+		Branch {
+		  DstBlock		  "One Cycle Indicator"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      Name		      "Reset Dec."
+	      Labels		      [0, 0]
+	      SrcBlock		      "Stop Decrease"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -250]
+	      DstBlock		      "Outlet Valve\nControl"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator4"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		Points			[25, 0]
+		Branch {
+		  DstBlock		  "Generator"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, -85]
+		  DstBlock		  "Switch"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"Sec increase"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Inlet Valve \nControl"
+	      SrcPort		      2
+	      Points		      [20, 0; 0, 30]
+	      DstBlock		      "Logical\nOperator4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Generator"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -125; -110, 0; 0, 25]
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Slip"
+	      Labels		      [0, 1]
+	      SrcBlock		      "Decrease Comm."
+	      SrcPort		      1
+	      DstBlock		      "Decrease command"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "out v"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Outlet Valve\nControl"
+	      SrcPort		      1
+	      DstBlock		      "Outlet Valve"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "hold Comm."
+	      Labels		      [0, 1]
+	      SrcBlock		      "Hold Comm."
+	      SrcPort		      1
+	      Points		      [30, 0; 0, 55]
+	      DstBlock		      "Inlet Valve \nControl"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "In Val"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "Inlet Valve"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Increase. Comm."
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Labels			[-1, 0]
+		Points			[0, -100]
+		DstBlock		"Inlet Valve \nControl"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Stop Decrease"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Stop Dec. Comm."
+	      SrcPort		      1
+	      DstBlock		      "Stop Decrease"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "One Cycle Indicator"
+	      SrcPort		      1
+	      Points		      [-20, 0; 0, 105]
+	      DstBlock		      "Logical\nOperator4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Outlet Valve\nControl"
+	      SrcPort		      2
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Brake Torque"
+	  Position		  [910, 158, 940, 172]
+	}
+	Line {
+	  Name			  "Tb"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Brake Torque Modulator 1"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 155]
+	    DstBlock		    "Scope3"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [40, 0]
+	    Branch {
+	      DstBlock		      "Brake Torque"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 0; 0, 410; -230, 0]
+	      Branch {
+		DstBlock		"-a Comparator1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 100; -95, 0]
+		DstBlock		"-a Comparator2"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  Points		  [0, 25; 35, 0]
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, 115]
+	    DstBlock		    "Scope3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Brake Torque Modulator 1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  2
+	  Points		  [0, 20; 60, 0]
+	  Branch {
+	    DstBlock		    "Scope3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Brake Torque Modulator 1"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -60]
+	  DstBlock		  "Scope3"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "A"
+	  SrcPort		  1
+	  Points		  [-10, 0; 0, -45]
+	  DstBlock		  "Mux1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "+a"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -65]
+	  DstBlock		  "Mux1"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "-a"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Brake Applic"
+	  SrcPort		  1
+	  DstBlock		  "Signal Processing"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Omega"
+	  SrcPort		  1
+	  DstBlock		  "Signal Processing"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "X2_dot"
+	  SrcPort		  1
+	  DstBlock		  "Signal Processing"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "r_eff"
+	  SrcPort		  1
+	  DstBlock		  "Signal Processing"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  ">-a"
+	  Labels		  [0, 1]
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  5
+	  Points		  [55, 0; 0, 40]
+	  DstBlock		  "Hold comand"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Br.App."
+	  Labels		  [0, 1]
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  1
+	  Points		  [0, 10; 250, 0]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "Generator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [130, 0]
+	    Branch {
+	      DstBlock		      "Brake Torque Modulator 1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -75; 290, 0]
+	      DstBlock		      "Brake Torque Modulator 2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  18
+	  Points		  [415, 0; 0, -135]
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  17
+	  Points		  [395, 0; 0, -155]
+	  DstBlock		  "Scope3"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  11
+	  Points		  [135, 0; 0, 50; 15, 0]
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  13
+	  Points		  [70, 0; 0, -80]
+	  DstBlock		  "Icrease Command"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  14
+	  Points		  [20, 0; 0, -165; 30, 0]
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  9
+	  Points		  [0, 5]
+	  DstBlock		  "Icrease Command"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Slip"
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  2
+	  Points		  [0, 10; 80, 0]
+	  Branch {
+	    Points		    [30, 0]
+	    DstBlock		    "Icrease Command1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 85]
+	    DstBlock		    "Hold comand"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Hold comand"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Icrease Command"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Generator"
+	  SrcPort		  1
+	  Points		  [95, 0; 0, 15; 205, 0]
+	  DstBlock		  "Brake Torque Modulator 2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Brake Torque Modulator 2"
+	  SrcPort		  1
+	  Points		  [0, 175]
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Signal Processing"
+	  SrcPort		  19
+	  Points		  [85, 0; 0, -5]
+	  Branch {
+	    Points		    [490, 0; 0, -170]
+	    DstBlock		    "Scope3"
+	    DstPort		    6
+	  }
+	  Branch {
+	    Points		    [0, -210]
+	    DstBlock		    "Icrease Command"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Icrease Command1"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "A1"
+	  SrcPort		  1
+	  Points		  [-10, 0]
+	  DstBlock		  "-a Comparator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "-a Comparator1"
+	  SrcPort		  1
+	  Points		  [-55, 0; 0, -195]
+	  DstBlock		  "Subsystem"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "A2"
+	  SrcPort		  1
+	  DstBlock		  "-a Comparator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "-a Comparator2"
+	  SrcPort		  1
+	  Points		  [-60, 0; 0, -25]
+	  DstBlock		  "Icrease Command2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  3
+	  Points		  [25, 0; 0, 280]
+	  DstBlock		  "Memory1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Icrease Command2"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, -415]
+	  DstBlock		  "Hold comand"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Memory1"
+	  SrcPort		  1
+	  DstBlock		  "Icrease Command2"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

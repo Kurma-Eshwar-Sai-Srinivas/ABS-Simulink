@@ -1,0 +1,594 @@
+Model {
+  Name			  "test_mftyre_sti"
+  Version		  4.1.1
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  on
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Feb 03 10:26:02 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "besselink"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Apr 23 13:10:51 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:42>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "2*pi"
+  SolverMode		  "SingleTasking"
+  Solver		  "ode4"
+  RelTol		  "1e-5"
+  AbsTol		  "1e-5"
+  Refine		  "1"
+  MaxStep		  "0.05"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "0.01"
+  FixedStep		  "0.02"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "test_mftyre_sti"
+    Location		    [7, 76, 704, 467]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Fy"
+      Ports		      [2]
+      Position		      [635, 77, 665, 108]
+      SourceBlock	      "simulink3/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "-0.3"
+      xmax		      "0.3"
+      ymin		      "-3500"
+      ymax		      "3500"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Mz"
+      Ports		      [2]
+      Position		      [635, 137, 665, 168]
+      SourceBlock	      "simulink3/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      xmin		      "-0.3"
+      xmax		      "0.3"
+      ymin		      "-50"
+      ymax		      "50"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Selector
+      Name		      "Selector"
+      Ports		      [1, 1]
+      Position		      [525, 84, 555, 116]
+      InputType		      "Vector"
+      ElementSrc	      "Internal"
+      Elements		      "2"
+      RowSrc		      "Internal"
+      Rows		      "1"
+      ColumnSrc		      "Internal"
+      Columns		      "1"
+      InputPortWidth	      "3"
+    }
+    Block {
+      BlockType		      Selector
+      Name		      "Selector1"
+      Ports		      [1, 1]
+      Position		      [525, 145, 555, 175]
+      InputType		      "Vector"
+      ElementSrc	      "Internal"
+      Elements		      "3"
+      RowSrc		      "Internal"
+      Rows		      "1"
+      ColumnSrc		      "Internal"
+      Columns		      "1"
+      InputPortWidth	      "3"
+    }
+    Block {
+      BlockType		      Selector
+      Name		      "Selector2"
+      Ports		      [1, 1]
+      Position		      [525, 204, 555, 236]
+      InputType		      "Vector"
+      ElementSrc	      "Internal"
+      Elements		      "1"
+      RowSrc		      "Internal"
+      Rows		      "1"
+      ColumnSrc		      "Internal"
+      Columns		      "1"
+      InputPortWidth	      "40"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Y-velocity\nramp"
+      Ports		      [0, 1]
+      Position		      [190, 162, 255, 178]
+      NamePlacement	      "alternate"
+      ShowName		      off
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Y-velocity\nramp"
+	Location		[26, 231, 307, 456]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [3, 1]
+	  Position		  [145, 57, 190, 143]
+	  Inputs		  "3"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "Sine Wave1"
+	  Position		  [40, 74, 90, 126]
+	  SineType		  "Time-based"
+	  Amplitude		  "5"
+	  Bias			  "0"
+	  Frequency		  "1"
+	  Phase			  "0"
+	  Samples		  "10"
+	  Offset		  "0"
+	  SampleTime		  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "x_vel"
+	  Position		  [40, 29, 90, 51]
+	  Value			  "10"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "z_vel"
+	  Position		  [40, 159, 90, 181]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Velocity"
+	  Position		  [215, 88, 245, 102]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "x_vel"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [0, -5]
+	  DstBlock		  "Velocity"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "z_vel"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Sine Wave1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "angtwc"
+      Position		      [190, 143, 255, 157]
+      ShowName		      off
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "jobflg1"
+      Position		      [190, 102, 255, 118]
+      ShowName		      off
+      Value		      "[ 0 0 0.28]"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "mftyre_sti"
+      Ports		      [8, 3]
+      Position		      [310, 73, 480, 247]
+      FontSize		      12
+      FontWeight	      "bold"
+      SourceBlock	      "dtlib/mftyre_sti"
+      SourceType	      "MFTYRE_STI"
+      idtyre		      "1"
+      typarr		      "mfread('mft_car175_70R13.tir')"
+      use_mode		      "4"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "omega"
+      Position		      [190, 182, 255, 198]
+      ShowName		      off
+      Value		      "[0 0 0]"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "omega1"
+      Position		      [190, 82, 255, 98]
+      ShowName		      off
+      Value		      "[0.0 0.0 0.0]"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "omegar"
+      Position		      [190, 202, 255, 218]
+      ShowName		      off
+      Value		      "10/0.2836"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LGAY / s_LKC"
+      Position		      [30, 259, 80, 281]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LGAZ"
+      Position		      [30, 339, 80, 361]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LKX"
+      Position		      [30, 139, 80, 161]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LKY"
+      Position		      [30, 219, 80, 241]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LMUX"
+      Position		      [30, 99, 80, 121]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LMUY"
+      Position		      [30, 179, 80, 201]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "s_LTR"
+      Position		      [30, 299, 80, 321]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "scaling_vector"
+      Ports		      [7, 1]
+      Position		      [115, 94, 120, 366]
+      ShowName		      off
+      Inputs		      "7"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "tramat"
+      Position		      [140, 121, 255, 139]
+      ShowName		      off
+      Value		      "[1 0 0    0 1 0    0 0 1]"
+      VectorParams1D	      on
+    }
+    Line {
+      SrcBlock		      "omega1"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "jobflg1"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "tramat"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "angtwc"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "omega"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "omegar"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Y-velocity\nramp"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "mftyre_sti"
+      SrcPort		      1
+      DstBlock		      "Selector"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "mftyre_sti"
+      SrcPort		      2
+      DstBlock		      "Selector1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "mftyre_sti"
+      SrcPort		      3
+      DstBlock		      "Selector2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Selector1"
+      SrcPort		      1
+      DstBlock		      "Mz"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Selector2"
+      SrcPort		      1
+      Points		      [40, 0; 0, -75]
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Fy"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Mz"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Selector"
+      SrcPort		      1
+      DstBlock		      "Fy"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "scaling_vector"
+      SrcPort		      1
+      DstBlock		      "mftyre_sti"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "s_LMUX"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "s_LKX"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "s_LMUY"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "s_LKY"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "s_LGAY / s_LKC"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "s_LTR"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "s_LGAZ"
+      SrcPort		      1
+      DstBlock		      "scaling_vector"
+      DstPort		      7
+    }
+    Annotation {
+      Position		      [316, 28]
+      Text		      "Delft-Tyre MF-Tyre demo: slip angle variation ("
+"STI interface)"
+      FontName		      "Arial Black"
+      FontSize		      18
+    }
+  }
+}

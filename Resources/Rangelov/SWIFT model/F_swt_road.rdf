@@ -1,0 +1,29 @@
+$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+FILE_TYPE  =  'rdf'
+FILE_VERSION  =  5.00
+FILE_FORMAT  =  'ASCII'
+(COMMENTS)
+{comment_string}
+'polyline style road description'
+$--------------------------------------------------------------------------UNITS
+[UNITS]
+ MASS               = 'kg'
+ LENGTH             = 'meter'
+ TIME               = 'sec'
+ ANGLE              = 'degree'
+ FORCE              = 'newton'
+$--------------------------------------------------------------------------MODEL
+[MODEL]
+ METHOD             = '2D'
+ ROAD_TYPE          = 'poly_line'
+$---------------------------------------------------------------------PARAMETERS
+[PARAMETERS]
+ OFFSET                  =   0
+ ROTATION_ANGLE_XY_PLANE =   0
+ MU                      =   1
+$
+(XZ_DATA)
+-10000         0       0
+     0         0       0
+ 10000         0       0 

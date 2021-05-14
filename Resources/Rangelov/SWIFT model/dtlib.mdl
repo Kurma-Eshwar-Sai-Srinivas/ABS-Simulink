@@ -1,0 +1,1410 @@
+Library {
+  Name			  "dtlib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Dec 15 17:51:17 2000"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "VictorSD"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Apr 24 11:29:58 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:73>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "dtlib"
+    Location		    [120, 98, 596, 606]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "mftyre_cpi"
+      Ports		      [6, 7]
+      Position		      [35, 282, 205, 458]
+      FontSize		      12
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MFTYRE_CPI"
+      MaskDescription	      "DELFT TYRE Magic Formula for Matlab\nMF-Tyre 5."
+"2, MF-MCTyre 1.1\n\nCONTACT POINT  INTERFACE\n\n© 1999-2003 TNO Automotive\nT"
+"he Netherlands"
+      MaskHelp		      "<!doctype html public \"-//w3c//dtd html 4.0 tr"
+"ansitional//en\">\n<html>\n<head>\n   <meta http-equiv=\"Content-Type\" conte"
+"nt=\"text/html; charset=iso-8859-1\">\n   <meta name=\"GENERATOR\" content=\""
+"Mozilla/4.72 [en] (X11; I; SunOS 5.7 sun4u) [Netscape]\">\n</head>\n<body>\n<"
+"font size=+1><b>MFTYRE_CPI: </b>MF-Tyre with Contact Point Interface.</font><"
+"p><font size=+1>Calculates tyre forces and moments in the contact point\ncent"
+"er using the Magic Formula.</font>\n<br>\n<hr WIDTH=\"100%\">\n<br><font size"
+"=+1>Inputs:</font>\n<ul>\n<li>\n<b>Omega (1)</b>: wheel angular velocity abou"
+"t wheel spin axis</li>\n\n<li>\n<b>Vx (1)</b>: forward velocity of wheel cent"
+"er in the wheel plane, parallel\nto the road surface</li>\n\n<li>\n<b>Vsy (1)"
+"</b>: lateral velocity at road level, parallel to the road surface\nand perpe"
+"ndicular to the wheel plane</li>\n\n<li>\n<b>Camber (1)</b>: inclination angl"
+"e of the wheel with respect to the road</li>\n\n<li>\n<b>Fz (1)</b>: tyre nor"
+"mal load</li>\n\n<li>\n<b>scaling vector (7)</b>: contains 7 coefficients to "
+"<b>scale</b> the following\nscaling factors (which are defined in the tyre pr"
+"operty file):\n<br>&nbsp;\n<br>&nbsp;\n</li>\n\n<table BORDER WIDTH=\"60%\" N"
+"OSAVE >\n<tr>\n<td>vector index</td>\n\n<td>scaling factor</td>\n\n<td>scales"
+"</td>\n</tr>\n\n<tr NOSAVE>\n<td>1</td>\n\n<td>LMUX</td>\n\n<td NOSAVE>peak l"
+"ongitudinal friction coefficient</td>\n</tr>\n\n<tr>\n<td>2</td>\n\n<td>LKX</"
+"td>\n\n<td>longitudinal slip stiffness</td>\n</tr>\n\n<tr>\n<td>3</td>\n\n<td"
+">LMUY</td>\n\n<td>peak lateral friction coefficient</td>\n</tr>\n\n<tr NOSAVE"
+">\n<td NOSAVE>4</td>\n\n<td>LKY</td>\n\n<td>cornering stiffness</td>\n</tr>\n"
+"\n<tr>\n<td>5</td>\n\n<td>LGAY</td>\n\n<td>camber stiffness lateral force</td"
+">\n</tr>\n\n<tr>\n<td>6</td>\n\n<td>LTR</td>\n\n<td>pneumatic trail</td>\n</t"
+"r>\n\n<tr>\n<td>7</td>\n\n<td>LGAZ</td>\n\n<td>camber stiffness aligning mome"
+"nt</td>\n</tr>\n</table>\n\n<p><b>NB</b>: The values in the scaling vector <b"
+">do not replace</b> the\nscaling factors from the tyre property file.\n<br>Th"
+"e scaling factor that will be used in simulation is the <b>product</b>\nof th"
+"e scaling factor in the tyre property\n<br>file and the corresponding coeffic"
+"ient in the scaling vector.&nbsp;\nSo, if no additional scaling - other than "
+"defined\n<br>in the tyre property file - needs to be applied, a vector of [1 "
+"1 1\n1 1 1 1] should be used.</ul>\n\n<hr WIDTH=\"100%\">\n<br><font size=+1>"
+"Outputs:</font>\n<ul>\n<li>\n<b>My_wheel (1)</b>: resultant moment about the "
+"wheel spin axis</li>\n\n<li>\n<b>Fx (1)</b>: longitudinal force</li>\n\n<li>"
+"\n<b>Fy (1)</b>: lateral force</li>\n\n<li>\n<b>Mx (1)</b>: overturning momen"
+"t</li>\n\n<li>\n<b>My (1)</b>: rolling resistance moment</li>\n\n<li>\n<b>Mz "
+"(1)</b>: self aligning moment</li>\n\n<li>\n<b>varinf(40)</b>: extra output v"
+"ariables on tyre behaviour. Most important\nones:</li>\n\n<ul>\n<li>\nvarinf("
+"1): slip angle</li>\n\n<li>\nvarinf(2): longitudinal slip</li>\n\n<li>\nvarin"
+"f(3): camber angle</li>\n\n<li>\nvarinf(4..9): Fx, Fy, Fz, Mx, My, Mz</li>\n"
+"\n<li>\nvarinf(12): effective rolling radius</li>\n\n<li>\nvarinf(19): longit"
+"udinal relaxation length</li>\n\n<li>\nvarinf(20): lateral relaxation length<"
+"/li>\n</ul>\n</ul>\n\n<hr WIDTH=\"100%\">\n<br><font size=+1>Parameters:</fon"
+"t>\n\n<ul>\n<li>\n<b>Tyre ID</b><font size=+1>: </font>integer value which wi"
+"ll be printed\nwith messages.</li>\n    <li><b>TYPARR</b>: variable containin"
+"g Magic Formula coefficients</li>\n    <li><b>Use mode</b>: number which defi"
+"nes the operating mode:</li>\n\n&nbsp;<table BORDER WIDTH=\"60%\" NOSAVE >\n<"
+"tr NOSAVE>\n<td NOSAVE><i>operating mode</i></td>\n\n<td><i>steady-state</i><"
+"/td>\n\n<td><i>transient</i></td>\n</tr>\n\n<tr>\n<td>vertical spring&nbsp;</"
+"td>\n\n<td>0</td>\n\n<td>0</td>\n</tr>\n\n<tr NOSAVE>\n<td NOSAVE>longitudina"
+"l only (Fx, My)</td>\n\n<td>1</td>\n\n<td>11</td>\n</tr>\n\n<tr>\n<td>lateral"
+" only (Fy, Mx, Mz)</td>\n\n<td>2</td>\n\n<td>12</td>\n</tr>\n\n<tr>\n<td>unco"
+"mbined (Fx, Fy, Mx, My, Mz)</td>\n\n<td>3</td>\n\n<td>13</td>\n</tr>\n\n<tr>"
+"\n<td>combined (Fx, Fy, Mx, My, Mz)</td>\n\n<td>4</td>\n\n<td>14</td>\n</tr>"
+"\n</table>\n\n<p><b>NB</b>: for <b>mirrored</b> characteristics, multiply the"
+" use mode\nwith '-1'</ul>\n\n<hr WIDTH=\"100%\">\n<br><font size=+1>General n"
+"otes:</font>\n<ul>\n<li>\nAll calculations are made using SI-units (m, rad, N"
+", kg, s)</li>\n\n<li>\nThe ISO sign convention is adopted for the definitions"
+" of slip and tyre\nforce</li>\n</ul>\n©2003 TNO Automotive, Vehicle Dynamics "
+"department, The Netherlands\n</body>\n</html>\n"
+      MaskPromptString	      "Tyre ID [integer]|TYPARR [double array]|Use mod"
+"e [integer]"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "idtyre=@1;typarr=@2;use_mode=@3;"
+      MaskDisplay	      "image(imread('dtlogo.jpg','jpg'))\n\nport_label"
+"('input',1,'Omega')\nport_label('input',2,'Vx')\nport_label('input',3,'Vsy')"
+"\nport_label('input',4,'Camber')\nport_label('input',5,'Fz')\nport_label('inp"
+"ut',6,'scaling vector')\n\nport_label('output',1,'My_wheel')\nport_label('out"
+"put',2,'Fx')\nport_label('output',3,'Fy')\nport_label('output',4,'Mx')\nport_"
+"label('output',5,'My')\nport_label('output',6,'Mz')\nport_label('output',7,'v"
+"arinf')\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "pixels"
+      MaskValueString	      "1|mfread('mft_car175_70R13.tir')|4"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"mftyre_cpi"
+	Location		[316, 263, 701, 850]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Omega"
+	  Position		  [50, 48, 80, 62]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vx"
+	  Position		  [50, 103, 80, 117]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vsy"
+	  Position		  [50, 158, 80, 172]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Camber"
+	  Position		  [50, 213, 80, 227]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Fz"
+	  Position		  [50, 268, 80, 282]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "scaling vector"
+	  Position		  [50, 323, 80, 337]
+	  Port			  "6"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [175, 482, 210, 518]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [8, 8]
+	  Position		  [145, 34, 255, 461]
+	  BackgroundColor	  "cyan"
+	  FunctionName		  "s_mftyre_cpi"
+	  Parameters		  "idtyre typarr"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "use_mode"
+	  Position		  [25, 373, 85, 397]
+	  Value			  "use_mode"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "My_wheel"
+	  Position		  [300, 48, 330, 62]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Fx"
+	  Position		  [300, 103, 330, 117]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Fy"
+	  Position		  [300, 158, 330, 172]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Mx"
+	  Position		  [300, 213, 330, 227]
+	  Port			  "4"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "My"
+	  Position		  [300, 268, 330, 282]
+	  Port			  "5"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Mz"
+	  Position		  [300, 323, 330, 337]
+	  Port			  "6"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "varinf"
+	  Position		  [300, 378, 330, 392]
+	  Port			  "7"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [-60, 0; 0, -60]
+	  DstBlock		  "S-Function"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "Omega"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vx"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Vsy"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  8
+	  Points		  [15, 0; 0, 60]
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  7
+	  DstBlock		  "varinf"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "My_wheel"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  2
+	  DstBlock		  "Fx"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  3
+	  DstBlock		  "Fy"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  4
+	  DstBlock		  "Mx"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  5
+	  DstBlock		  "My"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  6
+	  DstBlock		  "Mz"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Camber"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Fz"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "scaling vector"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "use_mode"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  7
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "mftyre_sti"
+      Ports		      [8, 3]
+      Position		      [35, 73, 205, 247]
+      FontSize		      12
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MFTYRE_STI"
+      MaskDescription	      "DELFT TYRE Magic Formula for Matlab\nMF-Tyre 5."
+"2, MF-MCTyre 1.1\n\nSTANDARD TYRE INTERFACE (STI 1.4)\n\n© 1999-2003 TNO Auto"
+"motive\nThe Netherlands"
+      MaskHelp		      "<!doctype html public \"-//w3c//dtd html 4.0 tr"
+"ansitional//en\">\n<html>\n<head>\n   <meta http-equiv=\"Content-Type\" conte"
+"nt=\"text/html; charset=iso-8859-1\">\n   <meta name=\"GENERATOR\" content=\""
+"Mozilla/4.72 [en] (X11; I; SunOS 5.7 sun4u) [Netscape]\">\n</head>\n<body>\n<"
+"font size=+1><b>MFTYRE_STI</b>: MF-Tyre with Standard Tyre Interface</font>\n"
+"<p><font size=+1>Calculates tyre forces and moments in the wheel carrier\nusi"
+"ng the Magic Formula.</font>\n<p>This block follows the definitions of the St"
+"andard Tyre Interface as\ndeveloped by the TYDEX Workgroup.\n<br>\n<hr WIDTH="
+"\"100%\">\n<br><font size=+1>Inputs:</font>\n<ul>\n    <li><b>road (3)</b>: a"
+" vector with three components: <br>1- z-value of the \n    road surface<br>2-"
+" dz/dx: slope of the road in x-direction<br>3- dz/dy: \n    slope of the road"
+" in y-direction<br><br>All road data has to be specified \n    in the global "
+"frame. If road undulations are to be included these values \n    can be made "
+"a function of the location of the wheel. The contact algorithm \n    is not s"
+"uited for obstacles with a short wavelength and requires that the \n    z-loc"
+"ation of the road be below the wheel center.<br></li>\n    <li><b>dis (3):</b"
+"> a vector with three components: the x, y and z-coordinate \n    of the whee"
+"l carrier in the global axis system.</li>\n    <li><b>tramat (9):</b> a vecto"
+"r with nine components to specify the transformation \n    from wheel carrier"
+" axis system to the global axis system. Tramat(1..3) is \n    the representat"
+"ion of the unit x-vector of the carrier axis system in the \n    global frame"
+". The same applies to tramat(4..6) being the unit y-vector and \n    tramat(7"
+"..9) being the unit z-vector of the carrier axis system expressed \n    in th"
+"e global frame.</li>\n    <li><b>angtwc (1):</b> rotation angle of the wheel "
+"with respect to the wheel \n    carrier about the wheel spin axis (currently "
+"not used by MF-Tyre/MF-MCTyre).</li>\n    <li><b>vel (3):</b> a vector with t"
+"hree components: the global velocity \n    of the wheel centre expressed in t"
+"he wheel carrier local frame (x, y and \n    z component).</li>\n    <li><b>o"
+"mega (3):</b> a vector with three components: the global angular \n    veloci"
+"ty of the wheel centre expressed in the wheel carrier local frame \n    (x, y"
+" and z component).</li>\n    <li><b>omegar (1):</b> relative angular velocity"
+" of the wheel with respect \n    to the wheel carrier about the wheel spin ax"
+"is.</li>\n    <li><b>scaling vector (7)</b>: contains 7 coefficients to scale"
+" the following \n    scaling factors (which are defined in the tyre property "
+"file): <br><br></li>\n</ul>\n<table border=\"1\" width=\"430\">\n    <tr>\n  "
+"      <td width=\"47\">\n            <p align=\"left\">vector index&nbsp;</p>"
+"\n        </td>\n        <td width=\"95\">\n            <p align=\"left\">&nb"
+"sp;scaling factor</p>\n        </td>\n        <td width=\"266\">\n           "
+" <p align=\"left\">scales</p>\n        </td>\n    </tr>\n    <tr>\n        <t"
+"d width=\"47\">\n            <p align=\"left\">1</p>\n        </td>\n        "
+"<td width=\"95\">\n            <p align=\"left\">LMUX</p>\n        </td>\n   "
+"     <td width=\"266\">\n            <p align=\"left\">peak longitudinal fric"
+"tion coefficient</p>\n        </td>\n    </tr>\n    <tr>\n        <td width="
+"\"47\">\n            <p align=\"left\">2</p>\n        </td>\n        <td widt"
+"h=\"95\">\n            <p align=\"left\">LKX&nbsp;</p>\n        </td>\n      "
+"  <td width=\"266\">\n            <p align=\"left\">longitudinal slip stiffne"
+"ss</p>\n        </td>\n    </tr>\n    <tr>\n        <td width=\"47\">\n      "
+"      <p align=\"left\">3</p>\n        </td>\n        <td width=\"95\">\n    "
+"        <p align=\"left\">&nbsp;LMUY</p>\n        </td>\n        <td width=\""
+"266\">\n            <p align=\"left\">peak lateral friction coefficient</p>\n"
+"        </td>\n    </tr>\n    <tr>\n        <td width=\"47\">\n            <p"
+" align=\"left\">4</p>\n        </td>\n        <td width=\"95\">\n            "
+"<p align=\"left\">LKY&nbsp;</p>\n        </td>\n        <td width=\"266\">\n "
+"           <p align=\"left\">cornering stiffness</p>\n        </td>\n    </tr"
+">\n    <tr>\n        <td width=\"47\">\n            <p align=\"left\">5</p>\n"
+"        </td>\n        <td width=\"95\">\n            <p align=\"left\">LGAY<"
+"/p>\n        </td>\n        <td width=\"266\">\n            <p align=\"left\""
+">camber stiffness lateral force</p>\n        </td>\n    </tr>\n    <tr>\n    "
+"    <td width=\"47\">\n            <p align=\"left\">6</p>\n        </td>\n  "
+"      <td width=\"95\">\n            <p align=\"left\">LTR</p>\n        </td>"
+"\n        <td width=\"266\">\n            <p align=\"left\">pneumatic trail</"
+"p>\n        </td>\n    </tr>\n    <tr>\n        <td width=\"47\">\n          "
+"  <p align=\"left\">7</p>\n        </td>\n        <td width=\"95\">\n        "
+"    <p align=\"left\">LGAZ</p>\n        </td>\n        <td width=\"266\">\n  "
+"          <p align=\"left\">camber stiffness aligning moment</p>\n        </t"
+"d>\n    </tr>\n</table>\n<P><b>NB</b>: The values in the scaling vector <b>do"
+" not replace</b> the scaling \nfactors from the tyre property file. <BR>The s"
+"caling factor that will be used in \nsimulation is the <b>product</b> of the "
+"scaling factor in the tyre property \n<BR>file and the corresponding coeffici"
+"ent in the scaling vector.&nbsp; So, if no \nadditional scaling - other than "
+"defined <BR>in the tyre property file - needs to \nbe applied, a vector of [1"
+" 1 1 1 1 1 1] should be used.</P><hr WIDTH=\"100%\">\n<br><font size=+1>Outpu"
+"ts:</font>\n<ul>\n    <li><b>force(3):</b> forces applied by the tyre onto th"
+"e rim at the centre \n    of the wheel. The force vector has three components"
+" in the accompanying \n    x, y and z direction of the carrier frame.</li>\n "
+"   <li><b>torque(3):</b> moments applied by the tyre onto the rim at the cent"
+"re \n    of the wheel, expressed in the carrier axis system. Torque as three "
+"components \n    representing the moments in the x, y and z direction</li>\n "
+"   <li><b>varinf(40)</b>: extra output variables on tyre behaviour. Most impo"
+"rtant\nones:</li>\n<ul>\n<li>\nvarinf(1): slip angle</li>\n\n<li>\nvarinf(2):"
+" longitudinal slip</li>\n\n<li>\nvarinf(3): camber angle</li>\n\n<li>\nvarinf"
+"(4..9): Fx, Fy, Fz, Mx, My, Mz at the tyre contact point</li>\n\n<li>\nvarinf"
+"(10): tyre deflection</li>\n\n<li>\nvarinf(11): deflection velocity, normal t"
+"o the ground</li>\n\n<li>\nvarinf(12): effective rolling radius</li>\n\n<li>"
+"\nvarinf(13..15): x, y, z coordinate of the contact point center</li>\n\n<li>"
+"\nvarinf(16..18): x, y, z component of the normal to the road</li>\n\n<li>\nv"
+"arinf(19): longitudinal relaxation length</li>\n\n<li>\nvarinf(20): lateral r"
+"elaxation length</li>\n\n<li>\nvarinf(24): longitudinal slip velocity Vsx</li"
+">\n\n<li>\nvarinf(25): lateral slip velocity Vsy</li>\n\n<li>\nvarinf(26): wh"
+"eel forward velocity Vx</li>\n</ul>\n</ul>\n<hr WIDTH=\"100%\">\n<br><font si"
+"ze=+1>Parameters:</font>\n<ul>\n<li>\n<b>Tyre ID</b>: integer value which wil"
+"l be printed with messages.</li>\n    <li><b>TYPARR</b>: variable containing "
+"Magic Formula coefficients</li>\n    <li><b>Use mode</b>: number which define"
+"s the operating mode:</li>\n\n&nbsp;<table BORDER WIDTH=\"60%\" NOSAVE >\n<tr"
+" NOSAVE>\n<td NOSAVE><i>operating mode</i></td>\n\n<td><i>steady-state</i></t"
+"d>\n\n<td><i>transient</i></td>\n</tr>\n\n<tr>\n<td>vertical spring only</td>"
+"\n\n<td>0</td>\n\n<td>0</td>\n</tr>\n\n<tr NOSAVE>\n<td NOSAVE>longitudinal o"
+"nly (Fx ,My)</td>\n\n<td>1</td>\n\n<td>11</td>\n</tr>\n\n<tr>\n<td>lateral on"
+"ly (Fy, Mx, Mz)</td>\n\n<td>2</td>\n\n<td>12</td>\n</tr>\n\n<tr>\n<td>uncombi"
+"ned (Fx, Fy, Mx, My, Mz)</td>\n\n<td>3</td>\n\n<td>13</td>\n</tr>\n\n<tr>\n<t"
+"d>combined (Fx, Fy, Mx, My, Mz)</td>\n\n<td>4</td>\n\n<td>14</td>\n</tr>\n</t"
+"able>\n\n<p><b>NB</b>: for <b>mirrored</b> characteristics, multiply the use "
+"mode\nwith '-1'\n<br></ul>\n\n<hr WIDTH=\"100%\">\n<br><font size=+1>General "
+"notes:</font>\n<ul>\n<li>\nAll calculations are made using SI-units (m, rad, "
+"N, kg, s)</li>\n\n<li>\nThe ISO sign convention is adopted for the definition"
+"s of slip and tyre\nforces</li>\n</ul>\n©2003 TNO Automotive, Vehicle Dynamic"
+"s department, The Netherlands\n</body>\n</html>\n"
+      MaskPromptString	      "Tyre ID [integer]|TYPARR [double array]|Use mod"
+"e [integer]"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "idtyre=@1;typarr=@2;use_mode=@3;"
+      MaskDisplay	      "image(imread('dtlogo.jpg','jpg'))\n\nport_label"
+"('input',1,'road')\nport_label('input',2,'dis')\nport_label('input',3,'tramat"
+"')\nport_label('input',4,'angtwc')\nport_label('input',5,'vel')\nport_label('"
+"input',6,'omega')\nport_label('input',7,'omegar')\nport_label('input',8,'scal"
+"ing vector')\n\nport_label('output',1,'force')\nport_label('output',2,'torque"
+"')\nport_label('output',3,'varinf')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "pixels"
+      MaskValueString	      "1|mfread('mft_car175_70R13.tir')|4"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"mftyre_sti"
+	Location		[954, 177, 1348, 811]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "road"
+	  Position		  [55, 48, 85, 62]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "dis"
+	  Position		  [55, 98, 85, 112]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "tramat"
+	  Position		  [55, 148, 85, 162]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "angtwc"
+	  Position		  [55, 198, 85, 212]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "vel"
+	  Position		  [55, 248, 85, 262]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "omega"
+	  Position		  [55, 298, 85, 312]
+	  Port			  "6"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "omegar"
+	  Position		  [55, 348, 85, 362]
+	  Port			  "7"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "scaling vector"
+	  Position		  [55, 398, 85, 412]
+	  Port			  "8"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [190, 587, 225, 623]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "[0 0]"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [10, 4]
+	  Position		  [155, 21, 260, 539]
+	  BackgroundColor	  "cyan"
+	  FunctionName		  "s_mftyre_sti"
+	  Parameters		  "idtyre typarr"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "omega3"
+	  Position		  [45, 444, 95, 466]
+	  ShowName		  off
+	  Value			  "use_mode"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "force"
+	  Position		  [315, 78, 345, 92]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "torque"
+	  Position		  [315, 208, 345, 222]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "varinf"
+	  Position		  [315, 338, 345, 352]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  4
+	  Points		  [30, 0; 0, 130]
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [-55, 0; 0, -100]
+	  DstBlock		  "S-Function"
+	  DstPort		  10
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "force"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  2
+	  DstBlock		  "torque"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  3
+	  DstBlock		  "varinf"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "omega3"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "road"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "omegar"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "omega"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "vel"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "angtwc"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "tramat"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "dis"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "scaling vector"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  8
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "position and orientation"
+      Ports		      [2, 2]
+      Position		      [255, 284, 395, 351]
+      FontName		      "Arial"
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Position and Orientation"
+      MaskDescription	      "DELFT TYRE Local 2 global transformation for Ma"
+"tlab\nfor use with Standard Tyre Interface (STI).\n\nSTANDARD TYRE INTERFACE "
+"(STI 1.4)\n\n© 2002-2003 TNO Automotive\nThe Netherlands"
+      MaskHelp		      "<!doctype html public \"-//w3c//dtd html 4.0 tr"
+"ansitional//en\">\n<html>\n<head>\n   <meta http-equiv=\"Content-Type\" conte"
+"nt=\"text/html; charset=iso-8859-1\">\n   <meta name=\"GENERATOR\" content=\""
+"Mozilla/4.72 [en] (X11; I; SunOS 5.7 sun4u) [Netscape]\">\n</head>\n<body>\n<"
+"font size=+1><b>Position and orientation</b>: </font><font size=\"4\">Calcula"
+"tion \nof transformation matrix and global position from local HUB velocities"
+"</font>\n<p><font size=\"4\">Transforms the local translational and angular v"
+"elocity of \nthe wheel center to the global position and transformation matri"
+"x for use with \nthe Standard \nTyre Interface (STI)</font></p>\n<p>This bloc"
+"k is supplied as addition for the possible \nconversion needed to run localiz"
+"ed input with MF-Tyre and SWIFT-Tyre implementing \nthe Standard Tyre Interfa"
+"ce.<br>\n<hr WIDTH=\"100%\">\n<br><font size=+1>Inputs:</font>\n<ul>\n<li>\n<"
+"b>vel, &nbsp;local(3)</b>: local velocity of the wheel center expressed in th"
+"e carrier\nframe: x, y and z component</li>\n\n<li>\n<b>omega, local (3)</b>:"
+" local  angular velocity of the wheel carrier expressed\nin the carrier frame"
+": x, y and z component</li>\n\n</ul>\n\n<hr WIDTH=\"100%\">\n<br><font size=+"
+"1>Outputs:</font>\n<ul>\n<li>\n<b>dis(3)</b>: location of the wheel center in"
+" the global frame: x, y and z \ncoordinate</li>\n\n    <li><b>tramat(9)</b>: "
+"transformation matrix from wheel carrier to the global frame \n<BR>tramat(1.."
+"3): representation of the unit x-vector of the carrier axis in the \nglobal f"
+"rame <BR>tramat(4..6): representation of the unit y-vector of the \ncarrier a"
+"xis in the global frame <BR>tramat(7..9): representation of the unit \nz-vect"
+"or of the carrier axis in the global frame </li>\n</ul>\n\n<hr WIDTH=\"100%\""
+">\n<br><font size=+1>Parameters:</font>\n<ul>\n    <li>init_pos: Initial whee"
+"l center position (global x, y and z \ncoordinate)</li>\n    <li>init_angle: "
+"Initial wheel center orientation (global, Bryant angles, rotation \n    seq. "
+"ZXY)</li>\n</ul>\n<hr WIDTH=\"100%\">\n<br><font size=+1>General notes:</font"
+">\n<ul>\n<li>\nAll calculations are made using SI-units (m, rad, N, kg, s)<br"
+">&nbsp;</li>\n\n</ul>\n©2003 TNO Automotive, Vehicle Dynamics department, The"
+" Netherlands\n</body>\n</html>\n"
+      MaskPromptString	      "Wheel center position (global)|Wheel center ori"
+"entation (global, Bryant angles, rotation seq. ZXY)"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "init_pos=@1;init_angle=@2;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "pixels"
+      MaskValueString	      "[0 0 0.28]|[0 0 0]"
+      MaskVariableAliases     ","
+      System {
+	Name			"position and orientation"
+	Location		[349, 477, 1016, 833]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "vel,local"
+	  Position		  [60, 68, 90, 82]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "omega,local"
+	  Position		  [60, 128, 90, 142]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [2, 1]
+	  Position		  [545, 65, 580, 100]
+	  ExternalReset		  "none"
+	  InitialConditionSource  "external"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [2, 1]
+	  Position		  [280, 260, 315, 295]
+	  Orientation		  "left"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "external"
+	  InitialCondition	  "0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [3, 3]
+	  Position		  [150, 42, 385, 228]
+	  BackgroundColor	  "cyan"
+	  FunctionName		  "s_local2global"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "omega1"
+	  Position		  [425, 80, 495, 100]
+	  ShowName		  off
+	  Value			  "init_pos"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "omega2"
+	  Position		  [425, 275, 495, 295]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "init_angle"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "dis"
+	  Position		  [615, 78, 645, 92]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "tramat"
+	  Position		  [615, 128, 645, 142]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  3
+	  Points		  [10, 0; 0, 75]
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "Integrator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  2
+	  DstBlock		  "tramat"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [-205, 0; 0, -85]
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "omega2"
+	  SrcPort		  1
+	  DstBlock		  "Integrator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "omega1"
+	  SrcPort		  1
+	  DstBlock		  "Integrator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  DstBlock		  "dis"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "omega,local"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "vel,local"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "swift_sti"
+      Ports		      [7, 3]
+      Position		      [255, 73, 425, 247]
+      FontSize		      12
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "SWIFT_STI"
+      MaskDescription	      "DELFT TYRE Magic Formula for Matlab\nSWIFT-Tyre"
+" 1.1\n\nSTANDARD TYRE INTERFACE (STI 1.4)\n\n© 2002-2003 TNO Automotive\nThe "
+"Netherlands"
+      MaskHelp		      "<!doctype html public \"-//w3c//dtd html 4.0 tr"
+"ansitional//en\">\n<html>\n<head>\n   <meta http-equiv=\"Content-Type\" conte"
+"nt=\"text/html; charset=iso-8859-1\">\n   <meta name=\"GENERATOR\" content=\""
+"Mozilla/4.72 [en] (X11; I; SunOS 5.7 sun4u) [Netscape]\">\n</head>\n<body>\n<"
+"font size=+1><b>SWIFT_STI</b>: SWIFT-Tyre with Standard Tyre Interface</font>"
+"\n<p><font size=+1>Calculates tyre forces and moments in the wheel carrier\nu"
+"sing SWIFT.</font>\n<hr WIDTH=\"100%\">\n<br><font size=+1>Inputs:</font>\n<u"
+"l>\n    <li><b>road (3)</b>:present for compatibility with MF-Tyre. In SWIFT-"
+"Tyre, \n    the road profile must be defined in an ASCII file format when the"
+" check \n    box 'Effective inputs' is selected. In the road property file th"
+"e road height \n    is specified as a function of travelled distance. In a ro"
+"ad data file the \n    left and right track data may be specified; the approp"
+"riate track data is \n    selected depending on the role of the tire in the m"
+"odel. SWIFT uses a zero-order \n    sample and hold when evaluating the road "
+"profile. Changes in the height \n    of the road profile are interpreted as s"
+"teps. For maximum accuracy it is \n    important that the sample points coinc"
+"ide with the data provided by the \n    user, otherwise interpolated data wil"
+"l be used. So you should use road data \n    with a fixed sample interval and"
+" specify this value for ROAD_INCREMENT in \n    the [MODEL] section of the ti"
+"re property file. Typically, the road sample \n    interval should be in the "
+"range of 0.1-0.2 meters or larger.</li>\n</ul>\n<ul>\n    <li>&nbsp;</li>\n  "
+"  <li><b>dis (3):</b> a vector with three components: the x, y and z-coordina"
+"te \n    of the wheel carrier in the global axis system.</li>\n    <li><b>tra"
+"mat (9):</b> a vector with nine components to specify the transformation \n  "
+"  from wheel carrier axis system to the global axis system. Tramat(1..3) is "
+"\n    the representation of the unit x-vector of the carrier axis system in t"
+"he \n    global frame. The same applies to tramat(4..6) being the unit y-vect"
+"or and \n    tramat(7..9) being the unit z-vector of the carrier axis system "
+"expressed \n    in the global frame.</li>\n    <li><b>angtwc (1):</b> rotatio"
+"n angle of the wheel with respect to the wheel \n    carrier about the wheel "
+"spin axis.</li>\n    <li><b>vel (3):</b> a vector with three components: the "
+"global velocity \n    of the wheel centre expressed in the wheel carrier loca"
+"l frame (x, y and \n    z component).</li>\n    <li><b>omega (3):</b> a vecto"
+"r with three components: the global angular \n    velocity of the wheel centr"
+"e expressed in the wheel carrier local frame \n    (x, y and z component).</l"
+"i>\n    <li><b>omegar (1):</b> relative angular velocity of the wheel with re"
+"spect \n    to the wheel carrier about the wheel spin axis.</li>\n</ul>\n<hr "
+"WIDTH=\"100%\">\n<br><font size=+1>Outputs:</font>\n<ul>\n    <li><b>force(3)"
+":</b> forces applied by the tyre onto the rim at the centre \n    of the whee"
+"l. The force vector has three components in the accompanying \n    x, y and z"
+" direction of the carrier frame.</li>\n    <li><b>torque(3):</b> moments appl"
+"ied by the tyre onto the rim at the centre \n    of the wheel, expressed in t"
+"he carrier axis system. Torque as three components \n    representing the mom"
+"ents in the x, y and z direction</li>\n    <li><b>varinf(40)</b>: extra outpu"
+"t variables on tyre behaviour. Most important\nones:</li>\n<ul>\n<li>\nvarinf"
+"(1): slip angle</li>\n\n<li>\nvarinf(2): longitudinal slip</li>\n\n<li>\nvari"
+"nf(3): camber angle</li>\n\n<li>\nvarinf(4..9): Fx, Fy, Fz, Mx, My, Mz at the"
+" tyre contact point</li>\n\n<li>\nvarinf(10): tyre deflection</li>\n\n<li>\nv"
+"arinf(11): deflection velocity, normal to the ground</li>\n\n<li>\nvarinf(12)"
+": effective rolling radius</li>\n\n<li>\nvarinf(13..15): x, y, z coordinate o"
+"f the contact point center</li>\n\n<li>\nvarinf(16..18): x, y, z component of"
+" the normal to the road</li>\n\n<li>\nvarinf(19): longitudinal relaxation len"
+"gth</li>\n\n<li>\nvarinf(20): lateral relaxation length</li>\n\n<li>\nvarinf("
+"24): longitudinal slip velocity Vsx</li>\n\n<li>\nvarinf(25): lateral slip ve"
+"locity Vsy</li>\n\n<li>\nvarinf(26): wheel forward velocity Vx</li>\n</ul>\n<"
+"/ul>\n<hr WIDTH=\"100%\">\n<br><font size=+1>Parameters:</font>\n<ul>\n    <l"
+"i><b>Tyre ID</b> is an integer value identifying the tyre block. This \n    n"
+"umber will be printed when messages related to the tyre block are printed. \n"
+"    Please take care that the numbers within 1 model are unique. In case effe"
+"ctive \n    inputs is used the following applies: Odd tyre id’s will use the "
+"left track \n    data in the data file &nbsp;while even tyre id’s will use th"
+"e right track \n    data from the given data file.</li>\n    <li><b>Use mode<"
+"/b> defines the operating mode of the tyre block. See Table \n    3 of sectio"
+"n 2.5.1.<br><br></li>\n<table BORDER WIDTH=\"541\" NOSAVE >\n<tr NOSAVE>\n<td"
+" NOSAVE width=\"252\"><i>operating mode</i></td>\n\n<td width=\"273\"><i>SWIF"
+"T</i></td>\n\n</tr>\n\n<tr>\n<td width=\"252\">vertical spring only</td>\n\n<"
+"td width=\"273\">20</td>\n\n</tr>\n\n<tr NOSAVE>\n<td NOSAVE width=\"252\">lo"
+"ngitudinal only (Fx ,My)</td>\n\n<td width=\"273\">21</td>\n\n</tr>\n\n<tr>\n"
+"<td width=\"252\">lateral only (Fy, Mx, Mz)</td>\n\n<td width=\"273\">22</td>"
+"\n\n</tr>\n\n<tr>\n<td width=\"252\">uncombined (Fx, Fy, Mx, My, Mz)</td>\n\n"
+"<td width=\"50%\">23</td>\n\n</tr>\n\n<tr>\n<td width=\"252\">combined (Fx, F"
+"y, Mx, My, Mz)</td>\n\n<td width=\"273\">24 (default)</td>\n\n</tr>\n        "
+"<tr>\n<td width=\"252\">\n                <p>mirroring of lateral characteris"
+"tics</p>\n</td>\n\n<td width=\"273\">\n                <p>Multiply USE_MODE w"
+"ith -1</p>\n</td>\n\n        </tr>\n        <tr>\n<td width=\"252\">\n       "
+"         <p>swift statics</p>\n</td>\n\n<td width=\"273\">\n                <"
+"p style=\"line-height:100%; margin-top:0; margin-bottom:0;\">add 100 to posit"
+"ive \n                USE_MODE </p>\n                <p style=\"line-height:1"
+"00%; margin-top:0; margin-bottom:0;\">or negate USE_MODE and \n              "
+"  subtract \n                100</p>\n</td>\n\n        </tr>\n</table>\n\n<p>"
+"&nbsp;<li><b>Tyre property file</b> is the file name of the tyre property fil"
+"e \n    (absolute or relative to current working directory) </li>\n    <li><b"
+">Road </b>enables you to choose road input via file (Data file (effective \n "
+"   inputs)) or as flat road (external inputs (smooth road).).</li>\n    <li><"
+"b>Road data file</b> contains the file location (absolute or relative \n    t"
+"o current working directory) </li>\n&nbsp;\n</ul>\n<hr WIDTH=\"100%\">\n<br><"
+"font size=+1>General notes:</font>\n<ul>\n<li>\nAll calculations are made usi"
+"ng SI-units (m, rad, N, kg, s)</li>\n\n<li>\nThe ISO sign convention is adopt"
+"ed for the definitions of slip and tyre\nforces</li>\n</ul>\n©2003 TNO Automo"
+"tive, Vehicle Dynamics department, The Netherlands\n</body>\n</html>\n"
+      MaskPromptString	      "Tyre ID [integer]|Use mode [integer]|Tyre prope"
+"rty file [string]|Road|Road data file [string]"
+      MaskStyleString	      "edit,edit,edit,popup(External input (smooth roa"
+"d)|Data file (effective inputs)),edit"
+      MaskTunableValueString  "on,on,on,on,on"
+      MaskCallbackString      "||||"
+      MaskEnableString	      "on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on"
+      MaskVariables	      "idtyre=@1;use_mode=@2;tpfname=@3;road_popup=@4;"
+"rdfname=@5;"
+      MaskInitialization      "idroad=1;\nif (road_popup==2)\n  idroad=100;\ne"
+"nd"
+      MaskDisplay	      "image(imread('dtlogo.jpg','jpg'))\n\nport_label"
+"('input',1,'road')\nport_label('input',2,'dis')\nport_label('input',3,'tramat"
+"')\nport_label('input',4,'angtwc')\nport_label('input',5,'vel')\nport_label('"
+"input',6,'omega')\nport_label('input',7,'omegar')\n\nport_label('output',1,'f"
+"orce')\nport_label('output',2,'torque')\nport_label('output',3,'varinf')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "pixels"
+      MaskValueString	      "1|24|'swt_car205_60R15.tir'|Data file (effectiv"
+"e inputs)|'swt_road.rdf'"
+      MaskVariableAliases     ",,,,"
+      System {
+	Name			"swift_sti"
+	Location		[691, 74, 1141, 745]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "road"
+	  Position		  [55, 53, 85, 67]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "dis"
+	  Position		  [55, 108, 85, 122]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "tramat"
+	  Position		  [55, 163, 85, 177]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "angtwc"
+	  Position		  [55, 218, 85, 232]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "vel"
+	  Position		  [55, 273, 85, 287]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "omega"
+	  Position		  [55, 328, 85, 342]
+	  Port			  "6"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "omegar"
+	  Position		  [55, 383, 85, 397]
+	  Port			  "7"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [190, 587, 225, 623]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "
+"0 0 0 0 0 0 0 0 0]"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [9, 4]
+	  Position		  [155, 21, 260, 539]
+	  BackgroundColor	  "cyan"
+	  FunctionName		  "s_swift_sti"
+	  Parameters		  "idtyre idroad tpfname rdfname"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "omega3"
+	  Position		  [50, 434, 100, 456]
+	  ShowName		  off
+	  Value			  "use_mode"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "force"
+	  Position		  [315, 78, 345, 92]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "torque"
+	  Position		  [315, 208, 345, 222]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "varinf"
+	  Position		  [315, 338, 345, 352]
+	  Port			  "3"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [-55, 0; 0, -105]
+	  DstBlock		  "S-Function"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  4
+	  Points		  [20, 0; 0, 130]
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "omega3"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "force"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  2
+	  DstBlock		  "torque"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  3
+	  DstBlock		  "varinf"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "road"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "omegar"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "omega"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "vel"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "angtwc"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "tramat"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "dis"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+      }
+    }
+    Annotation {
+      Position		      [231, 33]
+      Text		      "Delft-Tyre library for MATLAB/Simulink "
+      FontName		      "Arial Black"
+      FontSize		      18
+    }
+  }
+}
